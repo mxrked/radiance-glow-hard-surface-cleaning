@@ -26,6 +26,6 @@ Demo: PUT_SITE_URL_HERE
 
 ## Status
 
-PUT_NETLIFY_STATUS_CODE_HERE
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f999f31e-91f5-4cb0-8c92-1acf96ea4481/deploy-status)](https://app.netlify.com/sites/spectacular-basbousa-64983e/deploys)
 
 ===
