@@ -12,7 +12,7 @@ This is the website for Radiance Glow Hard Surface Cleaning.
 
 ---
 
-Demo: PUT_SITE_URL_HERE
+Demo: radianceglowhsc.com
 
 ===
 
