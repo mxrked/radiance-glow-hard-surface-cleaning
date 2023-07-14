@@ -9,10 +9,14 @@ import { useRouter } from "next/router";
 // Component Imports
 
 // Style Imports
-// import "../assets/styles/modules/About/About.module.css";
+import "../assets/styles/modules/About/About.module.css";
 
 export default function About() {
   const router = useRouter();
 
-  return "";
+  return (
+    <div id="PAGE" className="overrides_About page full-second">
+      <main id="PAGE_CNT"></main>
+    </div>
+  );
 }

@@ -9,10 +9,14 @@ import { useRouter } from "next/router";
 // Component Imports
 
 // Style Imports
-// import "../assets/styles/modules/404/404.module.css";
+import "../assets/styles/modules/404/404.module.css";
 
 export default function NotFound() {
   const router = useRouter();
 
-  return "";
+  return (
+    <div id="PAGE" className="overrides_404 page full-second">
+      <main id="PAGE_CNT"></main>
+    </div>
+  );
 }

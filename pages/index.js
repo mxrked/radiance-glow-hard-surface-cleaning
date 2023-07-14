@@ -12,10 +12,11 @@ import { useRouter } from "next/router";
 import "../assets/styles/modules/Index/Index.module.css";
 
 export default function Home() {
-
   const router = useRouter();
 
   return (
-    ""
-  )
+    <div id="PAGE" className="overrides_Index page full-second">
+      <main id="PAGE_CNT"></main>
+    </div>
+  );
 }
