@@ -3,8 +3,37 @@
 @import "../../tools/themes/themes.scss";
 @import "../../tools/variables/variable.scss";
 
-// Desktop 
+// Font Imports
+@font-face {
+  font-family: "Open Sans Extra Bold";
+  src: url("../../../fonts/OpenSans-ExtraBold.ttf");
+}
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url("../../../fonts/OpenSans-Bold.ttf");
+}
+@font-face {
+  font-family: "Open Sans Semi Bold";
+  src: url("../../../fonts/OpenSans-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Open Sans Medium";
+  src: url("../../../fonts/OpenSans-Medium.ttf");
+}
+@font-face {
+  font-family: "Open Sans Regular";
+  src: url("../../../fonts/OpenSans-Regular.ttf");
+}
+@font-face {
+  font-family: "Open Sans Light Italic";
+  src: url("../../../fonts/OpenSans-LightItalic.ttf");
+}
+@font-face {
+  font-family: "Open Sans Italic";
+  src: url("../../../fonts/OpenSans-Italic.ttf");
+}
 
+// Desktop
 
 // Responsive
 @media all and (max-width: 1995px) {
