@@ -22,34 +22,58 @@ export const NavTop = () => {
               className={`${styles.nav_top_inner_side} ${styles.nav_top_L} col-lg-6 col-md-6 col-sm-6 col-xs-6`}
             >
               <div className={`${styles.nav_top_inner_side_cnt}`}>
-                <a
-                  href="https://www.facebook.com/RadianceGHSC/"
+                <span
+                  onClick={() => {
+                    window.open(
+                      "https://www.facebook.com/RadianceGHSC/",
+                      "_blank"
+                    );
+                  }}
+                  // href="https://www.facebook.com/RadianceGHSC/"
                   className="half-second orientation-change-element"
-                  target={"_blank"}
+                  // target={"_blank"}
                 >
                   <FaFacebook className={`${styles.icon}`} />
-                </a>
-                <a
-                  href="https://www.yelp.com/biz/radiance-glow-hard-surface-cleaning-high-point-4"
+                </span>
+                <span
+                  onClick={() => {
+                    window.open(
+                      "https://www.yelp.com/biz/radiance-glow-hard-surface-cleaning-high-point-4",
+                      "_blank"
+                    );
+                  }}
+                  // href="https://www.yelp.com/biz/radiance-glow-hard-surface-cleaning-high-point-4"
                   className="half-second orientation-change-element"
-                  target={"_blank"}
+                  // target={"_blank"}
                 >
                   <FaYelp className={`${styles.icon}`} />
-                </a>
-                <a
-                  href="https://nextdoor.com/pages/radiance-glow-hard-surface-cleaning-high-point-nc/"
+                </span>
+                <span
+                  onClick={() => {
+                    window.open(
+                      "https://nextdoor.com/pages/radiance-glow-hard-surface-cleaning-high-point-nc/",
+                      "_blank"
+                    );
+                  }}
+                  // href="https://nextdoor.com/pages/radiance-glow-hard-surface-cleaning-high-point-nc/"
                   className={`${styles.next_door} half-second orientation-change-element`}
-                  target={"_blank"}
+                  // target={"_blank"}
                 >
                   <SiNextdoor className={`${styles.icon}`} />
-                </a>
-                <a
-                  href="https://www.youtube.com/channel/UCJoeDkbDMPAFf_haCa5tRYQ"
+                </span>
+                <span
+                  onClick={() => {
+                    window.open(
+                      "https://www.youtube.com/channel/UCJoeDkbDMPAFf_haCa5tRYQ",
+                      "_blank"
+                    );
+                  }}
+                  // href="https://www.youtube.com/channel/UCJoeDkbDMPAFf_haCa5tRYQ"
                   className={`half-second orientation-change-element`}
-                  target={"_blank"}
+                  // target={"_blank"}
                 >
                   <FaYoutube className={`${styles.icon}`} />
-                </a>
+                </span>
               </div>
             </div>
             <div
