@@ -49,33 +49,48 @@ export const DesktopNav = (props) => {
                 <ul>
                   {props.disableLink === "/" ? (
                     <li className={`${styles.deactive}`}>
-                      <span>HOME</span>
+                      <span className="orientation-change-element half-second">
+                        HOME
+                      </span>
                     </li>
                   ) : (
                     <li className={`${styles.active}`}>
-                      <a href="/">
+                      <a
+                        href="/"
+                        className="orientation-change-element half-second"
+                      >
                         <span>HOME</span>
                       </a>
                     </li>
                   )}
                   {props.disableLink === "/about" ? (
                     <li className={`${styles.deactive}`}>
-                      <span>ABOUT</span>
+                      <span className="orientation-change-element half-second">
+                        ABOUT
+                      </span>
                     </li>
                   ) : (
                     <li className={`${styles.active}`}>
-                      <a href="/about">
+                      <a
+                        href="/about"
+                        className="orientation-change-element half-second"
+                      >
                         <span>ABOUT</span>
                       </a>
                     </li>
                   )}
                   {props.disableLink === "/contact" ? (
                     <li className={`${styles.deactive}`}>
-                      <span>CONTACT</span>
+                      <span className="orientation-change-element half-second">
+                        CONTACT
+                      </span>
                     </li>
                   ) : (
                     <li className={`${styles.active}`}>
-                      <a href="/contact">
+                      <a
+                        href="/contact"
+                        className="orientation-change-element half-second"
+                      >
                         <span>CONTACT</span>
                       </a>
                     </li>
