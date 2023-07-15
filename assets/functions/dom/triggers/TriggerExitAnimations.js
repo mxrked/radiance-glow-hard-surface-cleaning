@@ -52,13 +52,13 @@ function TriggerExitAnimations() {
         DeclareStorageVariable("session", "HREF", link.href);
 
         // Closing the mobile nav and search
-        // CloseMobileNav();
+        CloseMobileNav();
 
         // Disabling pointer events and scrolling
         setTimeout(() => {
           document.body.style.overflowY = "hidden";
           document.body.style.pointerEvents = "none";
-        }, 2300);
+        }, 2600);
 
         setTimeout(() => {
           document.querySelectorAll(".fm-motion").forEach((fm) => {
@@ -68,7 +68,7 @@ function TriggerExitAnimations() {
           // Hiding elements
           document.querySelector(".page").style.opacity = 0;
           document.querySelector(".page").style.visibility = "hidden";
-        }, 2320);
+        }, 2620);
 
         // Removing background color of navs
         // document.getElementById("desktopNav").style.backgroundColor =
@@ -80,7 +80,7 @@ function TriggerExitAnimations() {
         setTimeout(() => {
           window.location.href = sessionStorage.getItem("HREF");
           RemoveStorageVariable("session", "EA Fix");
-        }, 2400);
+        }, 2700);
       });
     }
   });
