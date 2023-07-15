@@ -26,6 +26,6 @@ Demo: radianceglowhsc.com
 
 ## Status
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/f999f31e-91f5-4cb0-8c92-1acf96ea4481/deploy-status)](https://app.netlify.com/sites/spectacular-basbousa-64983e/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9f7fa14d-dcd7-46a6-b2ac-17b61a7685b5/deploy-status)](https://app.netlify.com/sites/incandescent-panda-488129/deploys)
 
 ===
