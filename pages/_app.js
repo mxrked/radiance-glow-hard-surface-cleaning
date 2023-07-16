@@ -167,6 +167,33 @@ export default function App({ Component, pageProps }) {
   }, [router]);
 
   //? DISPLAYS/HIDERS
+  //! Add selection styling for specific elements by adding a className to each element
+  useEffect(() => {
+    const ELEMENT_TYPES = [
+      "h1",
+      "h2",
+      "h3",
+      "h4",
+      "h5",
+      "h6",
+      "p",
+      "span",
+      "li",
+      "img",
+      "br",
+    ];
+
+    ELEMENT_TYPES.forEach((eT) => {
+      const ELEMENTS = document.getElementsByTagName(eT);
+
+      for (let i = 0; i < ELEMENTS.length; i++) {
+        if (!ELEMENTS[i].classList.contains("selected")) {
+          ELEMENTS[i].classList.add("selected");
+        }
+      }
+    });
+  }, []);
+
   //! Showing Page after some time
   useEffect(() => {
     setTimeout(() => {
