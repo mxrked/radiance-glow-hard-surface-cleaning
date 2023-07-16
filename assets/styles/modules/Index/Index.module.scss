@@ -34,12 +34,122 @@
 }
 
 // Desktop
+.index_top {
+  height: 950px;
+  position: relative;
+
+  .bg {
+    @include bGSU(cover, center);
+    opacity: 0.9;
+    filter: brightness(70%);
+  }
+
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    @include displayElement(flex, center, center);
+    text-align: center;
+
+    .overlay_cnt {
+      padding-bottom: 70px;
+
+      h1 {
+        font-family: "Open Sans Extra Bold";
+        font-size: $MajorHeading;
+        color: white;
+        line-height: 110px;
+        white-space: pre-wrap;
+      }
+
+      p {
+        font-family: "Open Sans Medium";
+        font-size: $Text;
+        color: white;
+        margin-top: 25px;
+        margin-bottom: 50px;
+        white-space: pre-wrap;
+      }
+
+      .overlay_cnt_links {
+        @include displayElement(flex, space-evenly, center);
+        max-width: 500px;
+        @include quickCenter("relative");
+
+        a {
+          width: 100%;
+          height: 50px;
+          font-size: $Link;
+          color: white;
+          text-decoration: none;
+          @include displayElement(flex, center, center);
+          font-family: "Open Sans Semi Bold";
+        }
+
+        .about_link {
+          background-color: $CongressBlue;
+          max-width: 170px;
+
+          &:hover {
+            background-color: $Cerulean;
+          }
+        }
+
+        .contact_link {
+          background-color: $CongressBlue;
+          max-width: 180px;
+
+          &:hover {
+            background-color: $Cerulean;
+          }
+        }
+      }
+    }
+  }
+}
 
 // Responsive
 @media all and (max-width: 1995px) {
 }
 
 @media all and (max-width: 991px) {
+  .index_top {
+    height: 750px;
+
+    .overlay {
+      .overlay_cnt {
+        padding-bottom: 20px;
+
+        h1 {
+          font-size: $Heading;
+          line-height: 75px;
+        }
+
+        p {
+          font-size: clamp(19px, 21px, 21px);
+        }
+
+        .overlay_cnt_links {
+          max-width: 360px;
+
+          a {
+            font-size: clamp(16px, 16px, 16px);
+          }
+
+          .about_link {
+            max-width: 140px;
+          }
+
+          .contact_link {
+            max-width: 150px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 992px) {
@@ -47,30 +157,403 @@
 
 // Desktop Window (Smallest)
 @media all and (max-width: 768px) {
+  .index_top {
+    height: 570px;
+
+    .overlay {
+      .overlay_cnt {
+        padding-bottom: 0px;
+
+        h1 {
+          font-size: $SubHeading;
+          line-height: 45px;
+        }
+
+        p {
+          font-size: clamp(16px, 17px, 17px);
+          max-width: 370px;
+          @include quickCenter("relative");
+          margin-bottom: 30px;
+        }
+
+        .overlay_cnt_links {
+          max-width: 360px;
+          display: block;
+          text-align: center;
+
+          a {
+            font-size: clamp(14px, 14px, 14px);
+            @include quickCenter("relative");
+            height: 45px;
+          }
+
+          .about_link {
+            max-width: 130px;
+            margin-bottom: 13px;
+          }
+
+          .contact_link {
+            max-width: 140px;
+          }
+        }
+      }
+    }
+  }
 }
 
 // Smaller Devices (Phones)
 @media all and (max-width: 419px) {
+  .index_top {
+    height: 430px;
+
+    .overlay {
+      .overlay_cnt {
+        padding-bottom: 0px;
+
+        h1 {
+          font-size: 26px;
+          line-height: 35px;
+        }
+
+        p {
+          font-size: clamp(14px, 14px, 14px);
+          max-width: 290px;
+          @include quickCenter("relative");
+          margin-top: 20px;
+          margin-bottom: 30px;
+        }
+
+        .overlay_cnt_links {
+          max-width: 360px;
+          display: block;
+          text-align: center;
+
+          a {
+            font-size: clamp(13px, 13px, 13px);
+            @include quickCenter("relative");
+            height: 40px;
+          }
+
+          .about_link {
+            max-width: 120px;
+            margin-bottom: 13px;
+          }
+
+          .contact_link {
+            max-width: 130px;
+          }
+        }
+      }
+    }
+  }
 }
 
 // Pixel 2 XL
 @media only screen and (min-device-width: 411px) and (max-device-width: 823px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .index_top {
+    height: 280px;
+
+    .overlay {
+      .overlay_cnt {
+        padding-top: 15px;
+        padding-bottom: 0px;
+
+        h1 {
+          font-size: 28px;
+          line-height: 35px;
+
+          br {
+            display: none;
+          }
+        }
+
+        p {
+          font-size: clamp(15px, 15px, 15px);
+          max-width: 370px;
+          @include quickCenter("relative");
+          margin-top: 20px;
+          margin-bottom: 30px;
+        }
+
+        .overlay_cnt_links {
+          max-width: 320px;
+          display: flex;
+          text-align: center;
+
+          a {
+            font-size: clamp(13px, 13px, 13px);
+            @include quickCenter("relative");
+            height: 40px;
+          }
+
+          .about_link {
+            max-width: 120px;
+            margin-bottom: 0px;
+          }
+
+          .contact_link {
+            max-width: 130px;
+          }
+        }
+      }
+    }
+  }
 }
 
 // Ipad
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .index_top {
+    height: 560px;
+
+    .overlay {
+      .overlay_cnt {
+        padding-top: 0px;
+        padding-bottom: 0px;
+
+        h1 {
+          font-size: 55px;
+          line-height: 60px;
+
+          br {
+            display: block;
+          }
+        }
+
+        p {
+          font-size: clamp(17px, 19px, 19px);
+          max-width: 570px;
+          @include quickCenter("relative");
+          margin-top: 20px;
+          margin-bottom: 30px;
+        }
+
+        .overlay_cnt_links {
+          max-width: 360px;
+          display: flex;
+          text-align: center;
+
+          a {
+            font-size: clamp(16px, 16px, 16px);
+            @include quickCenter("relative");
+            height: 50px;
+          }
+
+          .about_link {
+            max-width: 140px;
+            margin-bottom: 0px;
+          }
+
+          .contact_link {
+            max-width: 150px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  .index_top {
+    height: 300px;
+
+    .overlay {
+      .overlay_cnt {
+        padding-top: 0px;
+        padding-bottom: 0px;
+
+        h1 {
+          font-size: 31px;
+          line-height: 60px;
+
+          br {
+            display: none;
+          }
+        }
+
+        p {
+          font-size: clamp(15px, 16px, 16px);
+          max-width: 620px;
+          @include quickCenter("relative");
+          margin-top: 10px;
+          margin-bottom: 30px;
+        }
+
+        .overlay_cnt_links {
+          max-width: 290px;
+          display: flex;
+          text-align: center;
+
+          a {
+            font-size: clamp(14px, 14px, 14px);
+            @include quickCenter("relative");
+            height: 40px;
+          }
+
+          .about_link {
+            max-width: 120px;
+            margin-bottom: 0px;
+          }
+
+          .contact_link {
+            max-width: 130px;
+          }
+        }
+      }
+    }
+  }
 }
 
 // iPad Pro
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .index_top {
+    height: 590px;
+
+    .overlay {
+      .overlay_cnt {
+        padding-top: 0px;
+        padding-bottom: 0px;
+
+        h1 {
+          font-size: 65px;
+          line-height: 70px;
+
+          br {
+            display: block;
+          }
+        }
+
+        p {
+          font-size: clamp(19px, 21px, 21px);
+          max-width: 860px;
+          @include quickCenter("relative");
+          margin-top: 20px;
+          margin-bottom: 30px;
+        }
+
+        .overlay_cnt_links {
+          max-width: 360px;
+          display: flex;
+          text-align: center;
+
+          a {
+            font-size: clamp(16px, 16px, 16px);
+            @include quickCenter("relative");
+            height: 50px;
+          }
+
+          .about_link {
+            max-width: 140px;
+            margin-bottom: 0px;
+          }
+
+          .contact_link {
+            max-width: 150px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .index_top {
+    height: 540px;
+
+    .overlay {
+      .overlay_cnt {
+        padding-top: 0px;
+        padding-bottom: 0px;
+
+        h1 {
+          font-size: 55px;
+          line-height: 60px;
+
+          br {
+            display: block;
+          }
+        }
+
+        p {
+          font-size: clamp(18px, 20px, 20px);
+          max-width: 860px;
+          @include quickCenter("relative");
+          margin-top: 20px;
+          margin-bottom: 30px;
+        }
+
+        .overlay_cnt_links {
+          max-width: 360px;
+          display: flex;
+          text-align: center;
+
+          a {
+            font-size: clamp(16px, 16px, 16px);
+            @include quickCenter("relative");
+            height: 50px;
+          }
+
+          .about_link {
+            max-width: 140px;
+            margin-bottom: 0px;
+          }
+
+          .contact_link {
+            max-width: 150px;
+          }
+        }
+      }
+    }
+  }
 }
 
 // Laptops
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .index_top {
+    height: 590px;
+
+    .overlay {
+      .overlay_cnt {
+        padding-top: 0px;
+        padding-bottom: 0px;
+
+        h1 {
+          font-size: 65px;
+          line-height: 70px;
+
+          br {
+            display: none;
+          }
+        }
+
+        p {
+          font-size: clamp(20px, 22px, 22px);
+          max-width: 860px;
+          @include quickCenter("relative");
+          margin-top: 20px;
+          margin-bottom: 40px;
+        }
+
+        .overlay_cnt_links {
+          max-width: 380px;
+          display: flex;
+          text-align: center;
+
+          a {
+            font-size: clamp(18px, 18px, 18px);
+            @include quickCenter("relative");
+            height: 55px;
+          }
+
+          .about_link {
+            max-width: 150px;
+            margin-bottom: 0px;
+          }
+
+          .contact_link {
+            max-width: 160px;
+          }
+        }
+      }
+    }
+  }
 }
