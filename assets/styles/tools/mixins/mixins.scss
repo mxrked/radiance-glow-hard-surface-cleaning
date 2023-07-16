@@ -35,19 +35,21 @@
   background-repeat: no-repeat;
 }
 
-@mixin selection() {
-  &::selection {
-    color: #eeeeee;
-    //   background-color: #e5305b;
-    // background-color: #f27d24;
-  }
+// @mixin selection() {
+//   &::selection {
+//     color: #eeeeee;
+//     background-color: #0da0da;
+//     //   background-color: #e5305b;
+//     // background-color: #f27d24;
+//   }
 
-  &::-moz-selection {
-    color: #eeeeee;
-    //   background-color: #e5305b;
-    // background-color: #f27d24;
-  }
-}
+//   &::-moz-selection {
+//     color: #eeeeee;
+//     background-color: #0da0da;
+//     //   background-color: #e5305b;
+//     // background-color: #f27d24;
+//   }
+// }
 
 @mixin customScrollBar($width, $track, $thumb, $thumb_hover) {
   scrollbar-color: $thumb $track;
