@@ -27,7 +27,14 @@ function TriggerExitAnimations() {
         document.querySelector(".page").style.visibility = "hidden";
 
         document.querySelectorAll(".fm-motion").forEach((fm) => {
-          fm.style.opacity = 0;
+          // This is to prevent weird resizing/orientation change for elements with this class
+          if (!fm.classList.contains("full-second")) {
+            fm.classList.add("full-second");
+          }
+
+          setTimeout(() => {
+            fm.style.opacity = 0;
+          }, 500);
         });
 
         // Removing background color of navs
