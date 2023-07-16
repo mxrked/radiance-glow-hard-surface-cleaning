@@ -14,7 +14,7 @@ export const IndexTop = () => {
   return (
     <section
       id="indexTop"
-      className={`${styles.index_top} overrides_IndexTop fm-motion full-second`}
+      className={`${styles.index_top} overrides_IndexTop fm-motion`}
     >
       <BackgroundImage
         src={INDEX_TOP_BG}
