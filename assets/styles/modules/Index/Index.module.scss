@@ -265,6 +265,67 @@
   }
 }
 
+.index_contact {
+  height: 720px;
+  position: relative;
+  margin-top: 95px;
+
+  .bg {
+    @include bGSU(cover, center top);
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    @include displayElement(flex, center, center);
+    text-align: center;
+
+    .overlay_cnt {
+      padding-top: 30px;
+
+      h1 {
+        font-family: "Open Sans Extra Bold";
+        font-size: $Heading;
+        color: white;
+        white-space: pre-wrap;
+        line-height: 80px;
+      }
+
+      p {
+        font-family: "Open Sans Medium";
+        font-size: $Text;
+        color: white;
+        max-width: 940px;
+        @include quickCenter("relative");
+        margin-top: 25px;
+        margin-bottom: 50px;
+        white-space: pre-wrap;
+      }
+
+      a {
+        width: 100%;
+        height: 50px;
+        background-color: $CongressBlue;
+        max-width: 170px;
+        @include quickCenter("relative");
+        font-size: $Link;
+        color: white;
+        text-decoration: none;
+        @include displayElement(flex, center, center);
+        font-family: "Open Sans Semi Bold";
+
+        &:hover {
+          background-color: $Cerulean;
+        }
+      }
+    }
+  }
+}
+
 // Responsive
 @media all and (max-width: 1995px) {
   .index_services {

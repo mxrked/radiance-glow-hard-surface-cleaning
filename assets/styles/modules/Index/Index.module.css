@@ -233,6 +233,68 @@
   background-color: #0da0da;
 }
 
+.index_contact {
+  height: 720px;
+  position: relative;
+  margin-top: 95px;
+}
+.index_contact .bg {
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+.index_contact .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.index_contact .overlay .overlay_cnt {
+  padding-top: 30px;
+}
+.index_contact .overlay .overlay_cnt h1 {
+  font-family: "Open Sans Extra Bold";
+  font-size: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
+  color: white;
+  white-space: pre-wrap;
+  line-height: 80px;
+}
+.index_contact .overlay .overlay_cnt p {
+  font-family: "Open Sans Medium";
+  font-size: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+  color: white;
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  white-space: pre-wrap;
+}
+.index_contact .overlay .overlay_cnt a {
+  width: 100%;
+  height: 50px;
+  background-color: #004481;
+  max-width: 170px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans Semi Bold";
+}
+.index_contact .overlay .overlay_cnt a:hover {
+  background-color: #0da0da;
+}
+
 @media all and (max-width: 1995px) {
   .index_services .index_services_inner .index_services_inner_box .index_services_inner_row .index_services_R .index_services_inner_side_cnt {
     padding-left: 60px;
