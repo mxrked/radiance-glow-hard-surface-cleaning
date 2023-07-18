@@ -20,14 +20,9 @@ import { IndexContact } from "@/assets/components/pages/Index/IndexContact";
 
 // Style Imports
 import "../assets/styles/modules/Index/Index.module.css";
-import { getTotalPageVisits } from "@/assets/firebase/firebase";
 
 export default function Home() {
   const router = useRouter();
-
-  useEffect(() => {
-    getTotalPageVisits();
-  }, []);
 
   // Triggering exit animations
   useEffect(() => {
