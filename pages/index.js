@@ -17,6 +17,7 @@ import { IndexTop } from "@/assets/components/pages/Index/IndexTop";
 import { IndexServices } from "@/assets/components/pages/Index/IndexServices";
 import { IndexAbout } from "@/assets/components/pages/Index/IndexAbout";
 import { IndexContact } from "@/assets/components/pages/Index/IndexContact";
+import { Footer } from "@/assets/components/global/Footer/Footer";
 
 // Style Imports
 import "../assets/styles/modules/Index/Index.module.css";
@@ -42,6 +43,7 @@ export default function Home() {
         <IndexServices />
         <IndexAbout />
         <IndexContact />
+        <Footer disableLink="/" />
       </main>
     </div>
   );

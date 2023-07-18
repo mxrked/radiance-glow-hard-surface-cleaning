@@ -13,6 +13,7 @@ import { NavTop } from "@/assets/components/global/Nav/Both/NavTop";
 import { DesktopNav } from "@/assets/components/global/Nav/Desktop/DesktopNav";
 import { MobileNav } from "@/assets/components/global/Nav/Mobile/MobileNav";
 import { MobileNavMenu } from "@/assets/components/global/Nav/Mobile/MobileNavMenu";
+import { Footer } from "@/assets/components/global/Footer/Footer";
 
 // Style Imports
 import "../assets/styles/modules/404/404.module.css";
@@ -34,6 +35,7 @@ export default function NotFound() {
         <NavTop />
         <DesktopNav disableLink="/404" />
         <MobileNav disableLink="/404" />
+        <Footer disableLink="/404" />
       </main>
     </div>
   );
