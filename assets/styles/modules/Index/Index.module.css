@@ -102,7 +102,7 @@
 }
 
 .index_services {
-  margin-top: 60px;
+  margin-top: 0px;
 }
 .index_services .index_services_inner .index_services_inner_box .index_services_inner_row .index_services_inner_side {
   height: 850px;
@@ -236,7 +236,7 @@
 .index_contact {
   height: 720px;
   position: relative;
-  margin-top: 95px;
+  margin-top: 0px;
 }
 .index_contact .bg {
   background-size: cover;

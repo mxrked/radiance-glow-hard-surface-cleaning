@@ -34,6 +34,156 @@
 }
 
 // Desktop
+.footer {
+  .footer_main {
+    background-color: rgb(34, 34, 34);
+    padding-top: 120px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    .footer_main_inner {
+      max-width: 1500px;
+      @include quickCenter("relative");
+
+      .footer_main_inner_box {
+        .footer_main_inner_row {
+          .footer_main_inner_side {
+            height: 260px;
+            display: flex;
+            align-items: flex-start;
+          }
+
+          .footer_L {
+            justify-content: flex-start;
+
+            .footer_main_inner_side_cnt {
+              .logo {
+                margin-bottom: 15px;
+
+                img {
+                  max-width: 240px;
+                }
+              }
+
+              .copyright {
+                font-family: "Open Sans Semi Bold";
+                font-size: clamp(13px, 13px, 13px);
+                color: white;
+                opacity: 0.5;
+                @include displayElement(flex, flex-start, center);
+
+                .icon {
+                  margin-right: 5px;
+                }
+              }
+            }
+          }
+
+          .footer_M,
+          .footer_R {
+            justify-content: flex-end;
+          }
+
+          .footer_M {
+            .footer_main_inner_side_cnt {
+              ul {
+                text-align: right;
+                font-family: "Open Sans Semi Bold";
+                font-size: $Link;
+
+                li {
+                  height: 40px;
+
+                  a {
+                    color: white;
+                    text-decoration: none;
+
+                    &:hover {
+                      color: $Cerulean;
+                    }
+                  }
+                }
+
+                .deactive {
+                  span {
+                    color: white;
+                    opacity: 0.6;
+                  }
+                }
+              }
+            }
+          }
+
+          .footer_R {
+            .footer_main_inner_side_cnt {
+              text-align: right;
+              width: 100%;
+              max-width: 250px;
+              position: relative;
+              top: -25px;
+
+              .socials {
+                width: 100%;
+                @include displayElement(flex, space-around, center);
+                max-width: 200px;
+                @include quickCenter("relative");
+                margin-right: 0;
+
+                span {
+                  cursor: pointer;
+                  font-size: $Text;
+                  color: white;
+
+                  &:hover {
+                    color: $Cerulean;
+                  }
+                }
+
+                .next_door {
+                  font-size: 50px;
+                }
+              }
+
+              .contact {
+                width: 100%;
+                @include displayElement(grid, flex-end, center);
+                text-align: right;
+                font-family: "Open Sans Semi Bold";
+                font-size: clamp(14px, 16px, 16px);
+                color: white;
+                cursor: default;
+
+                li {
+                  margin-bottom: 11px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer_bottom {
+    height: 70px;
+    background-color: rgb(20, 20, 20);
+    @include displayElement(flex, center, center);
+    padding-left: 30px;
+    padding-right: 30px;
+
+    span {
+      font-family: "Open Sans Semi Bold";
+      font-size: clamp(16px, 16px, 16px);
+      color: white;
+
+      span {
+        text-decoration: underline;
+        color: $Cerulean;
+        cursor: pointer;
+      }
+    }
+  }
+}
 
 // Responsive
 @media all and (max-width: 1995px) {
