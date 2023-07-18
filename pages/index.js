@@ -16,12 +16,18 @@ import { MobileNavMenu } from "@/assets/components/global/Nav/Mobile/MobileNavMe
 import { IndexTop } from "@/assets/components/pages/Index/IndexTop";
 import { IndexServices } from "@/assets/components/pages/Index/IndexServices";
 import { IndexAbout } from "@/assets/components/pages/Index/IndexAbout";
+import { IndexContact } from "@/assets/components/pages/Index/IndexContact";
 
 // Style Imports
 import "../assets/styles/modules/Index/Index.module.css";
+import { getTotalPageVisits } from "@/assets/firebase/firebase";
 
 export default function Home() {
   const router = useRouter();
+
+  useEffect(() => {
+    getTotalPageVisits();
+  }, []);
 
   // Triggering exit animations
   useEffect(() => {
@@ -40,6 +46,7 @@ export default function Home() {
         <IndexTop />
         <IndexServices />
         <IndexAbout />
+        <IndexContact />
       </main>
     </div>
   );
