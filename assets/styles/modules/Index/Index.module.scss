@@ -283,6 +283,8 @@
     background-color: rgba(0, 0, 0, 0.6);
     @include displayElement(flex, center, center);
     text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
 
     .overlay_cnt {
       padding-top: 30px;
@@ -370,6 +372,22 @@
               }
             }
           }
+        }
+      }
+    }
+  }
+  .index_contact {
+    margin-top: 20px;
+
+    .overlay {
+      .overlay_cnt {
+        h1 {
+          font-size: $SubHeading;
+          line-height: 60px;
+        }
+
+        p {
+          font-size: clamp(20px, 20px, 20px);
         }
       }
     }
@@ -497,6 +515,24 @@
               }
             }
           }
+        }
+      }
+    }
+  }
+  .index_contact {
+    margin-top: 20px;
+    height: 500px;
+
+    .overlay {
+      .overlay_cnt {
+        h1 {
+          font-size: $SubHeading;
+          line-height: 45px;
+        }
+
+        p {
+          font-size: clamp(19px, 19px, 19px);
+          max-width: 550px;
         }
       }
     }
@@ -658,6 +694,33 @@
       }
     }
   }
+  .index_contact {
+    margin-top: 20px;
+    height: 500px;
+
+    .overlay {
+      .overlay_cnt {
+        h1 {
+          font-size: $SubHeading;
+          line-height: 45px;
+        }
+
+        p {
+          font-size: clamp(16px, 17px, 17px);
+          max-width: 370px;
+          @include quickCenter("relative");
+          margin-bottom: 30px;
+        }
+
+        a {
+          font-size: clamp(14px, 14px, 14px);
+          @include quickCenter("relative");
+          height: 45px;
+          max-width: 130px;
+        }
+      }
+    }
+  }
 }
 
 // Smaller Devices (Phones)
@@ -815,6 +878,35 @@
               }
             }
           }
+        }
+      }
+    }
+  }
+  .index_contact {
+    margin-top: 0px;
+    height: 370px;
+
+    .overlay {
+      .overlay_cnt {
+        padding-top: 10px;
+
+        h1 {
+          font-size: clamp(30px, 30px, 30px);
+          line-height: 35px;
+        }
+
+        p {
+          font-size: clamp(14px, 14px, 14px);
+          max-width: 370px;
+          @include quickCenter("relative");
+          margin-bottom: 30px;
+        }
+
+        a {
+          font-size: clamp(13px, 13px, 13px);
+          @include quickCenter("relative");
+          height: 40px;
+          max-width: 120px;
         }
       }
     }
@@ -985,6 +1077,35 @@
       }
     }
   }
+  .index_contact {
+    margin-top: 0px;
+    height: 270px;
+
+    .overlay {
+      .overlay_cnt {
+        padding-top: 10px;
+
+        h1 {
+          font-size: clamp(30px, 30px, 30px);
+          line-height: 35px;
+        }
+
+        p {
+          font-size: clamp(14px, 14px, 14px);
+          max-width: 420px;
+          @include quickCenter("relative");
+          margin-bottom: 30px;
+        }
+
+        a {
+          font-size: clamp(13px, 13px, 13px);
+          @include quickCenter("relative");
+          height: 40px;
+          max-width: 120px;
+        }
+      }
+    }
+  }
 }
 
 // Ipad
@@ -1147,6 +1268,35 @@
               }
             }
           }
+        }
+      }
+    }
+  }
+  .index_contact {
+    margin-top: 0px;
+    height: 390px;
+
+    .overlay {
+      .overlay_cnt {
+        padding-top: 10px;
+
+        h1 {
+          font-size: clamp(40px, 40px, 40px);
+          line-height: 35px;
+        }
+
+        p {
+          font-size: clamp(17px, 17px, 17px);
+          max-width: 520px;
+          @include quickCenter("relative");
+          margin-bottom: 40px;
+        }
+
+        a {
+          font-size: clamp(16px, 16px, 16px);
+          @include quickCenter("relative");
+          height: 50px;
+          max-width: 140px;
         }
       }
     }
@@ -1316,6 +1466,35 @@
               }
             }
           }
+        }
+      }
+    }
+  }
+  .index_contact {
+    margin-top: 0px;
+    height: 280px;
+
+    .overlay {
+      .overlay_cnt {
+        padding-top: 10px;
+
+        h1 {
+          font-size: clamp(30px, 30px, 30px);
+          line-height: 25px;
+        }
+
+        p {
+          font-size: clamp(15px, 15px, 15px);
+          max-width: 450px;
+          @include quickCenter("relative");
+          margin-bottom: 30px;
+        }
+
+        a {
+          font-size: clamp(14px, 14px, 14px);
+          @include quickCenter("relative");
+          height: 40px;
+          max-width: 125px;
         }
       }
     }
@@ -1490,6 +1669,35 @@
       }
     }
   }
+  .index_contact {
+    margin-top: 0px;
+    height: 420px;
+
+    .overlay {
+      .overlay_cnt {
+        padding-top: 10px;
+
+        h1 {
+          font-size: clamp(40px, 40px, 40px);
+          line-height: 45px;
+        }
+
+        p {
+          font-size: clamp(17px, 17px, 17px);
+          max-width: 540px;
+          @include quickCenter("relative");
+          margin-bottom: 30px;
+        }
+
+        a {
+          font-size: clamp(16px, 16px, 16px);
+          @include quickCenter("relative");
+          height: 50px;
+          max-width: 140px;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
@@ -1659,6 +1867,35 @@
       }
     }
   }
+  .index_contact {
+    margin-top: 0px;
+    height: 420px;
+
+    .overlay {
+      .overlay_cnt {
+        padding-top: 10px;
+
+        h1 {
+          font-size: clamp(40px, 40px, 40px);
+          line-height: 45px;
+        }
+
+        p {
+          font-size: clamp(17px, 17px, 17px);
+          max-width: 540px;
+          @include quickCenter("relative");
+          margin-bottom: 30px;
+        }
+
+        a {
+          font-size: clamp(16px, 16px, 16px);
+          @include quickCenter("relative");
+          height: 50px;
+          max-width: 140px;
+        }
+      }
+    }
+  }
 }
 
 // Laptops
@@ -1712,7 +1949,7 @@
     }
   }
   .index_services {
-    margin-top: 50px;
+    margin-top: 0px;
 
     .index_services_inner {
       .index_services_inner_box {
@@ -1825,6 +2062,35 @@
               }
             }
           }
+        }
+      }
+    }
+  }
+  .index_contact {
+    margin-top: 0px;
+    height: 500px;
+
+    .overlay {
+      .overlay_cnt {
+        padding-top: 10px;
+
+        h1 {
+          font-size: clamp(50px, 50px, 50px);
+          line-height: 45px;
+        }
+
+        p {
+          font-size: clamp(19px, 19px, 19px);
+          max-width: 640px;
+          @include quickCenter("relative");
+          margin-bottom: 30px;
+        }
+
+        a {
+          font-size: clamp(18px, 18px, 18px);
+          @include quickCenter("relative");
+          height: 55px;
+          max-width: 160px;
         }
       }
     }

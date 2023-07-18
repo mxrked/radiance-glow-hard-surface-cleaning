@@ -254,6 +254,8 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 .index_contact .overlay .overlay_cnt {
   padding-top: 30px;
@@ -316,6 +318,16 @@
     line-height: 60px;
   }
   .index_about .index_about_inner .index_about_inner_box .index_about_inner_row .index_about_L .index_about_inner_side_cnt p {
+    font-size: 20px;
+  }
+  .index_contact {
+    margin-top: 20px;
+  }
+  .index_contact .overlay .overlay_cnt h1 {
+    font-size: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+    line-height: 60px;
+  }
+  .index_contact .overlay .overlay_cnt p {
     font-size: 20px;
   }
 }
@@ -406,6 +418,18 @@
     line-height: 55px;
   }
   .index_about .index_about_inner .index_about_inner_box .index_about_inner_row .index_about_L .index_about_inner_side_cnt p {
+    font-size: 19px;
+    max-width: 550px;
+  }
+  .index_contact {
+    margin-top: 20px;
+    height: 500px;
+  }
+  .index_contact .overlay .overlay_cnt h1 {
+    font-size: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+    line-height: 45px;
+  }
+  .index_contact .overlay .overlay_cnt p {
     font-size: 19px;
     max-width: 550px;
   }
@@ -525,6 +549,28 @@
     margin-bottom: 30px;
   }
   .index_about .index_about_inner .index_about_inner_box .index_about_inner_row .index_about_L .index_about_inner_side_cnt a {
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 45px;
+    max-width: 130px;
+  }
+  .index_contact {
+    margin-top: 20px;
+    height: 500px;
+  }
+  .index_contact .overlay .overlay_cnt h1 {
+    font-size: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+    line-height: 45px;
+  }
+  .index_contact .overlay .overlay_cnt p {
+    font-size: 17px;
+    max-width: 370px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+  .index_contact .overlay .overlay_cnt a {
     font-size: 14px;
     margin-left: auto;
     margin-right: auto;
@@ -655,6 +701,31 @@
     margin-bottom: 30px;
   }
   .index_about .index_about_inner .index_about_inner_box .index_about_inner_row .index_about_L .index_about_inner_side_cnt a {
+    font-size: 13px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    max-width: 120px;
+  }
+  .index_contact {
+    margin-top: 0px;
+    height: 370px;
+  }
+  .index_contact .overlay .overlay_cnt {
+    padding-top: 10px;
+  }
+  .index_contact .overlay .overlay_cnt h1 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .index_contact .overlay .overlay_cnt p {
+    font-size: 14px;
+    max-width: 370px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+  .index_contact .overlay .overlay_cnt a {
     font-size: 13px;
     margin-left: auto;
     margin-right: auto;
@@ -795,6 +866,31 @@
     height: 40px;
     max-width: 120px;
   }
+  .index_contact {
+    margin-top: 0px;
+    height: 270px;
+  }
+  .index_contact .overlay .overlay_cnt {
+    padding-top: 10px;
+  }
+  .index_contact .overlay .overlay_cnt h1 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .index_contact .overlay .overlay_cnt p {
+    font-size: 14px;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+  .index_contact .overlay .overlay_cnt a {
+    font-size: 13px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    max-width: 120px;
+  }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
   .index_top {
@@ -923,6 +1019,31 @@
     margin-bottom: 40px;
   }
   .index_about .index_about_inner .index_about_inner_box .index_about_inner_row .index_about_L .index_about_inner_side_cnt a {
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    max-width: 140px;
+  }
+  .index_contact {
+    margin-top: 0px;
+    height: 390px;
+  }
+  .index_contact .overlay .overlay_cnt {
+    padding-top: 10px;
+  }
+  .index_contact .overlay .overlay_cnt h1 {
+    font-size: 40px;
+    line-height: 35px;
+  }
+  .index_contact .overlay .overlay_cnt p {
+    font-size: 17px;
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+  }
+  .index_contact .overlay .overlay_cnt a {
     font-size: 16px;
     margin-left: auto;
     margin-right: auto;
@@ -1065,6 +1186,31 @@
     height: 40px;
     max-width: 135px;
   }
+  .index_contact {
+    margin-top: 0px;
+    height: 280px;
+  }
+  .index_contact .overlay .overlay_cnt {
+    padding-top: 10px;
+  }
+  .index_contact .overlay .overlay_cnt h1 {
+    font-size: 30px;
+    line-height: 25px;
+  }
+  .index_contact .overlay .overlay_cnt p {
+    font-size: 15px;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+  .index_contact .overlay .overlay_cnt a {
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    max-width: 125px;
+  }
 }
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .index_top {
@@ -1200,6 +1346,31 @@
     margin-right: auto;
     height: 50px;
     max-width: 150px;
+  }
+  .index_contact {
+    margin-top: 0px;
+    height: 420px;
+  }
+  .index_contact .overlay .overlay_cnt {
+    padding-top: 10px;
+  }
+  .index_contact .overlay .overlay_cnt h1 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  .index_contact .overlay .overlay_cnt p {
+    font-size: 17px;
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+  .index_contact .overlay .overlay_cnt a {
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    max-width: 140px;
   }
 }
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
@@ -1337,6 +1508,31 @@
     height: 50px;
     max-width: 140px;
   }
+  .index_contact {
+    margin-top: 0px;
+    height: 420px;
+  }
+  .index_contact .overlay .overlay_cnt {
+    padding-top: 10px;
+  }
+  .index_contact .overlay .overlay_cnt h1 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  .index_contact .overlay .overlay_cnt p {
+    font-size: 17px;
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+  .index_contact .overlay .overlay_cnt a {
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    max-width: 140px;
+  }
 }
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
   .index_top {
@@ -1380,7 +1576,7 @@
     max-width: 160px;
   }
   .index_services {
-    margin-top: 50px;
+    margin-top: 0px;
   }
   .index_services .index_services_inner .index_services_inner_box .index_services_inner_row .index_services_inner_side {
     max-width: 100%;
@@ -1467,6 +1663,31 @@
     margin-bottom: 30px;
   }
   .index_about .index_about_inner .index_about_inner_box .index_about_inner_row .index_about_L .index_about_inner_side_cnt a {
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 55px;
+    max-width: 160px;
+  }
+  .index_contact {
+    margin-top: 0px;
+    height: 500px;
+  }
+  .index_contact .overlay .overlay_cnt {
+    padding-top: 10px;
+  }
+  .index_contact .overlay .overlay_cnt h1 {
+    font-size: 50px;
+    line-height: 45px;
+  }
+  .index_contact .overlay .overlay_cnt p {
+    font-size: 19px;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+  .index_contact .overlay .overlay_cnt a {
     font-size: 18px;
     margin-left: auto;
     margin-right: auto;
