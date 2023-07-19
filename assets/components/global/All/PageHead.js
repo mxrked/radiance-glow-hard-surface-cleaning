@@ -97,10 +97,12 @@ export const PageHead = () => {
       <meta property="og:type" content="website" />
       <meta property="og:locale" content="en_GB" />
       <meta property="og:url" content={url} />
+      {/**
       <meta
         name="google-site-verification"
         content="aPd101rbxmZ5gRWC4D6m_kW5i3UVNrrgnmA6CrJWz20"
       />
+      */}
       {/**
         <meta
         name="google-site-verification"
