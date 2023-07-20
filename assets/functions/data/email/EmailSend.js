@@ -10,11 +10,14 @@ import CheckValidEmail from "./CheckValidEmail";
 import CheckValidPhoneNumber from "./CheckValidPhoneNumber";
 import DeclareStorageVariable from "../storage/DeclareStorageVariable";
 
-const SERVICE_ID = "service_amdtdgj";
-const TEMPLATE_ID = "template_i1i9p9i";
-const PUBLIC_KEY = "lDJjRNeJ2R54YI5Hq";
+const SERVICE_ID = "service_upn0kl8";
+const TEMPLATE_ID = "template_6nf1yfo";
+const PUBLIC_KEY = "9f1hVWFncUz7ATjYn";
 
 emailjs.init(PUBLIC_KEY);
+
+const CURRENT_TIME = new Date().getTime();
+const CURRENT_DATE = new Date().getDate();
 
 function CheckForSpaceInFirstCharacter(input) {
   const CHECK_FOR_SPACE = /^\s/.test(input.value);
@@ -27,80 +30,85 @@ function CheckForSpaceInFirstCharacter(input) {
 }
 
 export default function EmailSend(rooter, formTarget) {
-  const FORM_NOTICE = document.getElementById("formNotice");
-  const FN = document.getElementById("clientFN");
-  const LN = document.getElementById("clientLN");
-  const EMAIL = document.getElementById("clientEmail");
-  const PHONE = document.getElementById("clientPhone");
-  const SUBJECT = document.getElementById("clientSubject");
-  const MESSAGE = document.getElementById("clientMessage");
+  const COMPANY_NAME = "Radiance Glow HSC";
+  const CREATION_DATE_TIME = `${CURRENT_DATE} - ${CURRENT_TIME}`;
+  const FIRST_NAME = document.getElementById("emailFirstName");
+  const LAST_NAME = document.getElementById("emailLastName");
+  const CLIENT_EMAIL_ADDRESS = document.getElementById("emailClientEmail");
+  const PHONE_NUMBER = document.getElementById("emailPhoneNumber");
+  const SUBJECT = document.getElementById("emailSubject");
+  const MESSAGE = document.getElementById("emailMessage");
+
   const TEMPLATE_PARAMS = {
-    clientFN: FN.value,
-    clientLN: LN.value,
-    clientEmail: EMAIL.value,
-    clientPhone: PHONE.value,
-    clientSubject: SUBJECT.value,
-    clientMessage: MESSAGE.value,
+    email_company_name: COMPANY_NAME,
+    email_creation_date_time: CREATION_DATE_TIME,
+    email_first_name: FIRST_NAME.value,
+    email_last_name: LAST_NAME.value,
+    email_phone_number: PHONE_NUMBER.value,
+    email_client_email: CLIENT_EMAIL_ADDRESS.value,
+    email_subject: SUBJECT.value,
+    email_message: MESSAGE.value,
   };
 
-  const CHECK_EMAIL = CheckValidEmail(EMAIL);
-  const CHECK_PHONE = CheckValidPhoneNumber(PHONE);
-  const SPACE_FN = CheckForSpaceInFirstCharacter(FN);
-  const SPACE_LN = CheckForSpaceInFirstCharacter(LN);
-  const SPACE_EMAIL = CheckForSpaceInFirstCharacter(EMAIL);
+  // Value checkers
+  const CHECK_PHONE_NUMBER = CheckValidPhoneNumber(PHONE_NUMBER);
+  const CHECK_EMAIL = CheckValidEmail(CLIENT_EMAIL_ADDRESS);
+
+  // Value spacers
+  const SPACE_FIRST_NAME = CheckForSpaceInFirstCharacter(FIRST_NAME);
+  const SPACE_LAST_NAME = CheckForSpaceInFirstCharacter(LAST_NAME);
+  const SPACE_EMAIL = CheckForSpaceInFirstCharacter(CLIENT_EMAIL_ADDRESS);
   const SPACE_SUBJECT = CheckForSpaceInFirstCharacter(SUBJECT);
   const SPACE_MESSAGE = CheckForSpaceInFirstCharacter(MESSAGE);
 
+  // Validation checks
   let nonEmptyInputs = false;
   let noSpacesAsFirstCharacter = false;
   let validEmail = false;
   let validPhone = false;
   let sentSuccess = false; // This is used to determine if the email was sent successfully
 
-  //   // Prevent send
+  // Prevents the form send
   formTarget.preventDefault();
 
-  // Checking if all fields are valid, then sends email
+  // Sending for after all valid checks
   if (
-    FN.value != "" &&
-    LN.value != "" &&
-    EMAIL.value != "" &&
-    PHONE.value != "" &&
+    FIRST_NAME.value != "" &&
+    LAST_NAME.value != "" &&
+    CLIENT_EMAIL_ADDRESS.value != "" &&
+    PHONE_NUMBER.value != "" &&
     SUBJECT.value != "" &&
-    MESSAGE.value != ""
+    MESSAGE != ""
   ) {
     nonEmptyInputs = true;
 
-    FORM_NOTICE.style.opacity = 0;
-    FORM_NOTICE.innerHTML = "Test";
+    // Style the form notice here
+    // .....
 
     if (CHECK_EMAIL) {
       validEmail = true;
 
-      FORM_NOTICE.style.opacity = 0;
-      FORM_NOTICE.innerHTML = "Test";
+      // Style inputs ...
 
-      if (CHECK_PHONE) {
+      if (CHECK_PHONE_NUMBER) {
         validPhone = true;
 
-        FORM_NOTICE.style.opacity = 0;
-        FORM_NOTICE.innerHTML = "Test";
+        // Style inputs ...
 
         if (
-          !SPACE_FN &&
-          !SPACE_LN &&
+          !SPACE_FIRST_NAME &&
+          !SPACE_LAST_NAME &&
           !SPACE_EMAIL &&
           !SPACE_SUBJECT &&
           !SPACE_MESSAGE
         ) {
           noSpacesAsFirstCharacter = true;
 
-          FORM_NOTICE.style.opacity = 0;
-          FORM_NOTICE.innerHTML = "Test";
+          // Style inputs ...
 
           formTarget.preventDefault();
 
-          // Sending email after all valid checks
+          // Sending the email
           emailjs
             .send(SERVICE_ID, TEMPLATE_ID, TEMPLATE_PARAMS)
             .then((res) => {
@@ -122,101 +130,21 @@ export default function EmailSend(rooter, formTarget) {
         } else {
           noSpacesAsFirstCharacter = false;
 
-          document.getElementById("formSentSuccessfully").style.opacity = 0;
-
-          FORM_NOTICE.style.opacity = 1;
-          FORM_NOTICE.innerHTML =
-            "Error: You cannot have a space as the first character in an input.";
+          // Hide/Display/Styling ...
         }
       } else {
         validPhone = false;
 
-        document.getElementById("formSentSuccessfully").style.opacity = 0;
-
-        FORM_NOTICE.style.opacity = 1;
-        FORM_NOTICE.innerHTML = "Error: That is an invalid phone number.";
+        // Hide/Display/Styling ...
       }
     } else {
       validEmail = false;
 
-      document.getElementById("formSentSuccessfully").style.opacity = 0;
-
-      FORM_NOTICE.style.opacity = 1;
-      FORM_NOTICE.innerHTML = "Error: That is an invalid email address.";
+      // Hide/Display/Styling ...
     }
   } else {
     nonEmptyInputs = false;
 
-    document.getElementById("formSentSuccessfully").style.opacity = 0;
-
-    FORM_NOTICE.style.opacity = 1;
-    FORM_NOTICE.innerHTML = "Error: You cannot have empty inputs.";
+    // Hide/Display/Styling ...
   }
-
-  //   if (
-  //     FN.value == "" ||
-  //     LN.value == "" ||
-  //     EMAIL.value == "" ||
-  //     PHONE.value == "" ||
-  //     SUBJECT.value == "" ||
-  //     MESSAGE.value == ""
-  //   ) {
-  //     nonEmptyInputs = false;
-
-  //     FORM_NOTICE.innerHTML = "Error: You cannot have empty inputs.";
-  //   }
-
-  //   if (
-  //     FN.value != "" &&
-  //     LN.value != "" &&
-  //     EMAIL.value != "" &&
-  //     PHONE.value != "" &&
-  //     SUBJECT.value != "" &&
-  //     MESSAGE.value != ""
-  //   ) {
-  //     nonEmptyInputs = true;
-
-  //     FORM_NOTICE.innerHTML = "Test";
-  //   }
-
-  //   if (CHECK_EMAIL) {
-  //     validEmail = true;
-
-  //     FORM_NOTICE.innerHTML = "Test";
-  //   } else {
-  //     validEmail = false;
-
-  //     FORM_NOTICE.innerHTML = "Error: That is an invalid email address.";
-  //   }
-
-  //   if (CHECK_PHONE) {
-  //     validPhone = true;
-
-  //     FORM_NOTICE.innerHTML = "Test";
-  //   } else {
-  //     validPhone = false;
-
-  //     FORM_NOTICE.innerHTML = "Error: That is an invalid phone number.";
-  //   }
-
-  //   if (
-  //     !SPACE_FN &&
-  //     !SPACE_LN &&
-  //     !SPACE_EMAIL &&
-  //     !SPACE_SUBJECT &&
-  //     !SPACE_MESSAGE
-  //   ) {
-  //     noSpacesAsFirstCharacter = true;
-
-  //     FORM_NOTICE.innerHTML = "Test";
-  //   } else {
-  //     noSpacesAsFirstCharacter = false;
-
-  //     FORM_NOTICE.innerHTML =
-  //       "Error: You cannot have a space as the first character in an input.";
-  //   }
-
-  //   if (nonEmptyInputs && noSpacesAsFirstCharacter && validEmail && validPhone) {
-
-  //   }
 }
