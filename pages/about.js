@@ -15,6 +15,7 @@ import { MobileNav } from "@/assets/components/global/Nav/Mobile/MobileNav";
 import { MobileNavMenu } from "@/assets/components/global/Nav/Mobile/MobileNavMenu";
 import { Footer } from "@/assets/components/global/Footer/Footer";
 import { AboutTop } from "@/assets/components/pages/About/AboutTop";
+import { AboutVideo } from "@/assets/components/pages/About/AboutVideo";
 
 // Style Imports
 import "../assets/styles/modules/About/About.module.css";
@@ -38,6 +39,7 @@ export default function About() {
         <MobileNav disableLink="/about" />
 
         <AboutTop />
+        <AboutVideo />
 
         <Footer disableLink="/about" />
       </main>
