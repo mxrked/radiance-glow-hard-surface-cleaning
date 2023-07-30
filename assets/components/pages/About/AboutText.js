@@ -11,7 +11,8 @@ export const AboutText = () => {
     <section id="aboutText" className={`${styles.about_text}`}>
       <div className={`${styles.about_text_inner}`}>
         <h1 className="orientation-change-element half-second">
-          Radiance Glow's History.
+          About
+          <br /> Radiance Glow.
         </h1>
 
         <p className="orientation-change-element half-second">
