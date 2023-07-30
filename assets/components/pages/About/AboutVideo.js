@@ -16,6 +16,7 @@ export const AboutVideo = () => {
     <section id="aboutVideo" className={`${styles.about_video}`}>
       <div className={`${styles.about_video_inner}`}>
         <video
+          className="orientation-change-element half-second"
           //controls
           src={ABOUT_TOP_VIDEO}
           title="Radiance Glow HSC Video."
@@ -57,6 +58,14 @@ export const AboutVideo = () => {
           }}
         >
           <button
+            onMouseEnter={(e) => {
+              document.getElementById("darken").style.backgroundColor =
+                "rgba(0,0,0,0.7)";
+            }}
+            onMouseLeave={(e) => {
+              document.getElementById("darken").style.backgroundColor =
+                "rgba(0,0,0,0.6)";
+            }}
             onClick={(e) => {
               // Hiding/Displaying btns
               e.currentTarget.style.display = "none";
@@ -74,6 +83,14 @@ export const AboutVideo = () => {
             <FaPause className={`${styles.icon}`} />
           </button>
           <button
+            onMouseEnter={(e) => {
+              document.getElementById("darken").style.backgroundColor =
+                "rgba(0,0,0,0.7)";
+            }}
+            onMouseLeave={(e) => {
+              document.getElementById("darken").style.backgroundColor =
+                "rgba(0,0,0,0.6)";
+            }}
             onClick={(e) => {
               // Hiding/Displaying btns
               e.currentTarget.style.display = "none";
@@ -96,6 +113,14 @@ export const AboutVideo = () => {
             <FaPlay className={`${styles.icon}`} />
           </button>
           <button
+            onMouseEnter={(e) => {
+              document.getElementById("darken").style.backgroundColor =
+                "rgba(0,0,0,0.7)";
+            }}
+            onMouseLeave={(e) => {
+              document.getElementById("darken").style.backgroundColor =
+                "rgba(0,0,0,0.6)";
+            }}
             onClick={(e) => {
               // Hiding/Displaying btns
               e.currentTarget.style.display = "none";
