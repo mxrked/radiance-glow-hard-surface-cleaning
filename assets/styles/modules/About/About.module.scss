@@ -69,6 +69,8 @@
   margin-top: 120px;
   margin-bottom: 120px;
   @include displayElement(flex, center, center);
+  padding-left: 40px;
+  padding-right: 40px;
 
   .about_video_inner {
     max-width: 1300px;
@@ -151,6 +153,10 @@
       }
     }
   }
+  .about_video {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -174,6 +180,10 @@
       }
     }
   }
+  .about_video {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
 }
 
 // Smaller Devices (Phones)
@@ -194,6 +204,12 @@
       }
     }
   }
+  .about_video {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 // Pixel 2 XL
@@ -211,6 +227,18 @@
           font-size: 31px;
           line-height: 40px;
         }
+      }
+    }
+  }
+  .about_video {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .about_video_inner {
+      video {
+        max-width: 385px;
       }
     }
   }
@@ -234,6 +262,18 @@
       }
     }
   }
+  .about_video {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .about_video_inner {
+      video {
+        max-width: 485px;
+      }
+    }
+  }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
@@ -250,6 +290,18 @@
           font-size: 36px;
           line-height: 40px;
         }
+      }
+    }
+  }
+  .about_video {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .about_video_inner {
+      video {
+        max-width: 485px;
       }
     }
   }
@@ -273,6 +325,18 @@
       }
     }
   }
+  .about_video {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .about_video_inner {
+      video {
+        max-width: 585px;
+      }
+    }
+  }
 }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
@@ -289,6 +353,18 @@
           font-size: 43px;
           line-height: 50px;
         }
+      }
+    }
+  }
+  .about_video {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .about_video_inner {
+      video {
+        max-width: 585px;
       }
     }
   }
@@ -309,6 +385,18 @@
           font-size: 53px;
           line-height: 60px;
         }
+      }
+    }
+  }
+  .about_video {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .about_video_inner {
+      video {
+        max-width: 685px;
       }
     }
   }
