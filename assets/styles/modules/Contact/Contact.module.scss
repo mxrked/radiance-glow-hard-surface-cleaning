@@ -65,6 +65,62 @@
     }
   }
 }
+.contact_above_form {
+  margin-top: 220px;
+  margin-bottom: 220px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  .contact_above_form_inner {
+    max-width: 1300px;
+    @include quickCenter("relative");
+    text-align: center;
+
+    .contact_above_form_inner_cnt {
+      h1 {
+        font-family: "Open Sans Extra Bold";
+        font-size: $SubHeading;
+        color: $CongressBlue;
+        white-space: pre-wrap;
+        line-height: 60px;
+        margin-bottom: 40px;
+        @include quickCenter("relative");
+
+        br {
+          display: none;
+        }
+      }
+
+      p {
+        font-family: "Open Sans Medium";
+        font-size: $Text;
+        color: $MineShaft;
+        // max-width: 940px;
+        @include quickCenter("relative");
+        margin-top: 25px;
+        margin-bottom: 50px;
+        white-space: pre-wrap;
+      }
+
+      button {
+        width: 100%;
+        height: 50px;
+        background-color: $CongressBlue;
+        max-width: 220px;
+        @include quickCenter("relative");
+        font-size: $Link;
+        color: white;
+        text-decoration: none;
+        @include displayElement(flex, center, center);
+        font-family: "Open Sans Semi Bold";
+
+        &:hover {
+          background-color: $Cerulean;
+        }
+      }
+    }
+  }
+}
 
 // Responsive
 @media all and (max-width: 1995px) {
@@ -103,6 +159,31 @@
       }
     }
   }
+  .contact_above_form {
+    margin-top: 80px;
+    margin-bottom: 80px;
+
+    .contact_above_form_inner {
+      max-width: 750px;
+
+      .contact_above_form_inner_cnt {
+        h1 {
+          font-size: clamp(2.3rem, 3vw, 3rem);
+          line-height: 35px;
+          max-width: 550px;
+        }
+
+        p {
+          font-size: clamp(19px, 19px, 19px);
+          max-width: 550px;
+        }
+
+        button {
+          max-width: 200px;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 992px) {
@@ -122,6 +203,37 @@
         h1 {
           font-size: clamp(2rem, 3vw, 3rem);
           line-height: 40px;
+        }
+      }
+    }
+  }
+  .contact_above_form {
+    margin-top: 80px;
+    margin-bottom: 80px;
+
+    .contact_above_form_inner {
+      max-width: 750px;
+
+      .contact_above_form_inner_cnt {
+        h1 {
+          font-size: clamp(2rem, 3vw, 3rem);
+          line-height: 35px;
+          max-width: 350px;
+          margin-bottom: 20px;
+        }
+
+        p {
+          font-size: clamp(16px, 17px, 17px);
+          max-width: 370px;
+          @include quickCenter("relative");
+          margin-top: 0px;
+          margin-bottom: 30px;
+        }
+
+        button {
+          max-width: 170px;
+          height: 45px;
+          font-size: clamp(14px, 14px, 14px);
         }
       }
     }
@@ -146,6 +258,38 @@
       }
     }
   }
+  .contact_above_form {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    .contact_above_form_inner {
+      max-width: 750px;
+
+      .contact_above_form_inner_cnt {
+        h1 {
+          font-size: 24px;
+          line-height: 25px;
+          max-width: 250px;
+        }
+
+        p {
+          font-size: clamp(14px, 14px, 14px);
+          max-width: 370px;
+          @include quickCenter("relative");
+          margin-bottom: 30px;
+        }
+
+        button {
+          font-size: clamp(13px, 13px, 13px);
+          @include quickCenter("relative");
+          height: 40px;
+          max-width: 160px;
+        }
+      }
+    }
+  }
 }
 
 // Pixel 2 XL
@@ -162,6 +306,38 @@
         h1 {
           font-size: 31px;
           line-height: 40px;
+        }
+      }
+    }
+  }
+  .contact_above_form {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    .contact_above_form_inner {
+      max-width: 850px;
+
+      .contact_above_form_inner_cnt {
+        h1 {
+          font-size: 24px;
+          line-height: 25px;
+          max-width: 770px;
+        }
+
+        p {
+          font-size: clamp(14px, 14px, 14px);
+          max-width: 410px;
+          @include quickCenter("relative");
+          margin-bottom: 30px;
+        }
+
+        button {
+          font-size: clamp(13px, 13px, 13px);
+          @include quickCenter("relative");
+          height: 40px;
+          max-width: 160px;
         }
       }
     }
@@ -186,6 +362,38 @@
       }
     }
   }
+  .contact_above_form {
+    margin-top: 90px;
+    margin-bottom: 90px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    .contact_above_form_inner {
+      max-width: 850px;
+
+      .contact_above_form_inner_cnt {
+        h1 {
+          font-size: 36px;
+          line-height: 40px;
+          max-width: 340px;
+        }
+
+        p {
+          font-size: clamp(17px, 17px, 17px);
+          max-width: 520px;
+          @include quickCenter("relative");
+          margin-bottom: 40px;
+        }
+
+        button {
+          font-size: clamp(16px, 16px, 16px);
+          @include quickCenter("relative");
+          height: 50px;
+          max-width: 190px;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
@@ -201,6 +409,39 @@
         h1 {
           font-size: 36px;
           line-height: 40px;
+        }
+      }
+    }
+  }
+  .contact_above_form {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    .contact_above_form_inner {
+      max-width: 850px;
+
+      .contact_above_form_inner_cnt {
+        h1 {
+          font-size: clamp(30px, 30px, 30px);
+          line-height: 35px;
+          max-width: 640px;
+          margin-bottom: 30px;
+        }
+
+        p {
+          font-size: clamp(15px, 15px, 15px);
+          max-width: 425px;
+          @include quickCenter("relative");
+          margin-bottom: 30px;
+        }
+
+        button {
+          font-size: clamp(14px, 14px, 14px);
+          @include quickCenter("relative");
+          height: 40px;
+          max-width: 165px;
         }
       }
     }
@@ -225,6 +466,39 @@
       }
     }
   }
+  .contact_above_form {
+    margin-top: 110px;
+    margin-bottom: 110px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    .contact_above_form_inner {
+      max-width: 850px;
+
+      .contact_above_form_inner_cnt {
+        h1 {
+          font-size: clamp(40px, 40px, 40px);
+          line-height: 45px;
+          max-width: 425px;
+          margin-bottom: 30px;
+        }
+
+        p {
+          font-size: clamp(17px, 17px, 17px);
+          max-width: 550px;
+          @include quickCenter("relative");
+          margin-bottom: 30px;
+        }
+
+        button {
+          font-size: clamp(16px, 16px, 16px);
+          @include quickCenter("relative");
+          height: 50px;
+          max-width: 185px;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
@@ -240,6 +514,39 @@
         h1 {
           font-size: 43px;
           line-height: 50px;
+        }
+      }
+    }
+  }
+  .contact_above_form {
+    margin-top: 110px;
+    margin-bottom: 110px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    .contact_above_form_inner {
+      max-width: 850px;
+
+      .contact_above_form_inner_cnt {
+        h1 {
+          font-size: clamp(40px, 40px, 40px);
+          line-height: 45px;
+          max-width: 425px;
+          margin-bottom: 30px;
+        }
+
+        p {
+          font-size: clamp(17px, 17px, 17px);
+          max-width: 550px;
+          @include quickCenter("relative");
+          margin-bottom: 30px;
+        }
+
+        button {
+          font-size: clamp(16px, 16px, 16px);
+          @include quickCenter("relative");
+          height: 50px;
+          max-width: 185px;
         }
       }
     }
@@ -260,6 +567,39 @@
         h1 {
           font-size: 53px;
           line-height: 60px;
+        }
+      }
+    }
+  }
+  .contact_above_form {
+    margin-top: 110px;
+    margin-bottom: 110px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    .contact_above_form_inner {
+      max-width: 850px;
+
+      .contact_above_form_inner_cnt {
+        h1 {
+          font-size: clamp(50px, 50px, 50px);
+          line-height: 45px;
+          max-width: 525px;
+          margin-bottom: 30px;
+        }
+
+        p {
+          font-size: clamp(19px, 19px, 19px);
+          max-width: 640px;
+          @include quickCenter("relative");
+          margin-bottom: 40px;
+        }
+
+        button {
+          font-size: clamp(18px, 18px, 18px);
+          @include quickCenter("relative");
+          height: 55px;
+          max-width: 210px;
         }
       }
     }
