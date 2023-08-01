@@ -25,4 +25,175 @@
 @font-face {
   font-family: "Open Sans Italic";
   src: url("../../../fonts/OpenSans-Italic.ttf");
+}
+.contact_top {
+  height: 420px;
+  position: relative;
+}
+.contact_top .bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  filter: brightness(70%);
+}
+.contact_top .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.contact_top .overlay .overlay_cnt h1 {
+  font-family: "Open Sans Extra Bold";
+  font-size: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
+  color: white;
+  white-space: pre-wrap;
+  line-height: 85px;
+}
+
+@media all and (max-width: 1995px) {
+  .contact_top {
+    height: 310px;
+  }
+  .contact_top .overlay .overlay_cnt {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 0px;
+  }
+  .contact_top .overlay .overlay_cnt h1 {
+    font-size: clamp(3rem, 3vw, 3rem);
+    line-height: 55px;
+  }
+}
+@media all and (max-width: 991px) {
+  .contact_top {
+    height: 280px;
+  }
+  .contact_top .overlay .overlay_cnt {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 0px;
+  }
+  .contact_top .overlay .overlay_cnt h1 {
+    font-size: clamp(2.5rem, 3vw, 3rem);
+    line-height: 55px;
+  }
+}
+@media all and (max-width: 768px) {
+  .contact_top {
+    height: 210px;
+  }
+  .contact_top .overlay .overlay_cnt {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 0px;
+  }
+  .contact_top .overlay .overlay_cnt h1 {
+    font-size: clamp(2rem, 3vw, 3rem);
+    line-height: 40px;
+  }
+}
+@media all and (max-width: 419px) {
+  .contact_top {
+    height: 140px;
+  }
+  .contact_top .overlay .overlay_cnt {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+  }
+  .contact_top .overlay .overlay_cnt h1 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+@media only screen and (min-device-width: 411px) and (max-device-width: 823px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .contact_top {
+    height: 190px;
+  }
+  .contact_top .overlay .overlay_cnt {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+  }
+  .contact_top .overlay .overlay_cnt h1 {
+    font-size: 31px;
+    line-height: 40px;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .contact_top {
+    height: 230px;
+  }
+  .contact_top .overlay .overlay_cnt {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+  }
+  .contact_top .overlay .overlay_cnt h1 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  .contact_top {
+    height: 230px;
+  }
+  .contact_top .overlay .overlay_cnt {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+  }
+  .contact_top .overlay .overlay_cnt h1 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .contact_top {
+    height: 270px;
+  }
+  .contact_top .overlay .overlay_cnt {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+  }
+  .contact_top .overlay .overlay_cnt h1 {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .contact_top {
+    height: 270px;
+  }
+  .contact_top .overlay .overlay_cnt {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+  }
+  .contact_top .overlay .overlay_cnt h1 {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .contact_top {
+    height: 300px;
+  }
+  .contact_top .overlay .overlay_cnt {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+  }
+  .contact_top .overlay .overlay_cnt h1 {
+    font-size: 53px;
+    line-height: 60px;
+  }
 }/*# sourceMappingURL=Contact.module.css.map */

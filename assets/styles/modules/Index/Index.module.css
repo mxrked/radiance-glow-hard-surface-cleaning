@@ -321,7 +321,7 @@
     font-size: 20px;
   }
   .index_contact {
-    margin-top: 20px;
+    margin-top: 0px;
   }
   .index_contact .overlay .overlay_cnt h1 {
     font-size: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
