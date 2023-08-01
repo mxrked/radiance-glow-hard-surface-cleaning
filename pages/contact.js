@@ -15,10 +15,10 @@ import { MobileNav } from "@/assets/components/global/Nav/Mobile/MobileNav";
 import { MobileNavMenu } from "@/assets/components/global/Nav/Mobile/MobileNavMenu";
 import { Footer } from "@/assets/components/global/Footer/Footer";
 import { ContactTop } from "@/assets/components/pages/Contact/ContactTop";
+import { ContactAboveForm } from "@/assets/components/pages/Contact/ContactAboveForm";
 
 // Style Imports
 import "../assets/styles/modules/Contact/Contact.module.css";
-
 export default function Contact() {
   const router = useRouter();
 
@@ -38,6 +38,7 @@ export default function Contact() {
         <MobileNav disableLink="/contact" />
 
         <ContactTop />
+        <ContactAboveForm />
 
         <Footer disableLink="/contact" />
       </main>
