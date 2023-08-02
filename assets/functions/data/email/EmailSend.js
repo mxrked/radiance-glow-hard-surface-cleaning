@@ -80,7 +80,7 @@ export default function EmailSend(rooter, formTarget) {
     LAST_NAME.value != "" &&
     CLIENT_EMAIL_ADDRESS.value != "" &&
     PHONE_NUMBER.value != "" &&
-    SUBJECT.value != "" &&
+    SUBJECT.value != "-- NOT SELECTED --" &&
     MESSAGE.value != ""
   ) {
     nonEmptyInputs = true;
