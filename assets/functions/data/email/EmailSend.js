@@ -37,19 +37,29 @@ export default function EmailSend(rooter, formTarget) {
   const LAST_NAME = document.getElementById("emailLastName");
   const CLIENT_EMAIL_ADDRESS = document.getElementById("emailClientEmail");
   const PHONE_NUMBER = document.getElementById("emailPhoneNumber");
-  const SUBJECT = document.getElementById("emailSubject");
-  const SELECTED_INDEX = SUBJECT.selectedIndex;
+  const SERVICE = document.getElementById("emailService");
+  const SERVICE_SELECTED_INDEX = SERVICE.selectedIndex;
+  const LOCATION = document.getElementById("emailLocation");
+  const LOCATION_SELECTED_INDEX = LOCATION.selectedIndex;
   const MESSAGE = document.getElementById("emailMessage");
 
   const TEMPLATE_PARAMS = {
     // email_company_name: COMPANY_NAME,
     // email_creation_date_time: CREATION_DATE_TIME,
+    email_subject:
+      "RGHSC Contact Form Submission - " +
+      SERVICE.options[SERVICE_SELECTED_INDEX].text +
+      " (" +
+      LOCATION.options[LOCATION_SELECTED_INDEX].text +
+      ")",
     email_first_name: FIRST_NAME.value,
     email_last_name: LAST_NAME.value,
     email_phone_number: PHONE_NUMBER.value,
     email_client_email: CLIENT_EMAIL_ADDRESS.value,
-    email_subject:
-      "RGHSC Contact Form Submission - " + SUBJECT.options[SELECTED_INDEX].text,
+    email_service:
+      "RGHSC Contact Form Submission - " +
+      SERVICE.options[SERVICE_SELECTED_INDEX].text,
+    email_location: LOCATION.options[LOCATION_SELECTED_INDEX].text,
     email_message: MESSAGE.value,
   };
 
@@ -61,7 +71,7 @@ export default function EmailSend(rooter, formTarget) {
   const SPACE_FIRST_NAME = CheckForSpaceInFirstCharacter(FIRST_NAME);
   const SPACE_LAST_NAME = CheckForSpaceInFirstCharacter(LAST_NAME);
   const SPACE_EMAIL = CheckForSpaceInFirstCharacter(CLIENT_EMAIL_ADDRESS);
-  const SPACE_SUBJECT = CheckForSpaceInFirstCharacter(SUBJECT);
+  const SPACE_SERVICE = CheckForSpaceInFirstCharacter(SERVICE);
   const SPACE_MESSAGE = CheckForSpaceInFirstCharacter(MESSAGE);
 
   // Validation checks
@@ -80,7 +90,8 @@ export default function EmailSend(rooter, formTarget) {
     LAST_NAME.value != "" &&
     CLIENT_EMAIL_ADDRESS.value != "" &&
     PHONE_NUMBER.value != "" &&
-    SUBJECT.value != "-- NOT SELECTED --" &&
+    SERVICE.value != "-- NOT SELECTED --" &&
+    LOCATION.value != "-- NOT SELECTED --" &&
     MESSAGE.value != ""
   ) {
     nonEmptyInputs = true;
@@ -101,7 +112,7 @@ export default function EmailSend(rooter, formTarget) {
           !SPACE_FIRST_NAME &&
           !SPACE_LAST_NAME &&
           !SPACE_EMAIL &&
-          !SPACE_SUBJECT &&
+          !SPACE_SERVICE &&
           !SPACE_MESSAGE
         ) {
           noSpacesAsFirstCharacter = true;
