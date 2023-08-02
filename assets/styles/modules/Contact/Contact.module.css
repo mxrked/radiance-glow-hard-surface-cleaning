@@ -59,7 +59,7 @@
 
 .contact_above_form {
   margin-top: 220px;
-  margin-bottom: 220px;
+  margin-bottom: 150px;
   padding-left: 40px;
   padding-right: 40px;
 }
@@ -111,6 +111,180 @@
   background-color: #0da0da;
 }
 
+.contact_form_holder {
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 20px;
+  margin-bottom: 200px;
+}
+.contact_form_holder .contact_form_inner {
+  max-width: 970px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.13);
+}
+.contact_form_holder .contact_form_inner .form_notice {
+  font-family: "Open Sans Semi Bold";
+  font-size: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+  color: red;
+  text-align: center;
+  display: block;
+  opacity: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.contact_form_holder .contact_form_inner form {
+  height: 700px;
+}
+.contact_form_holder .contact_form_inner form .form_box {
+  padding: 0;
+}
+.contact_form_holder .contact_form_inner form .form_box .form_row .form_side {
+  padding: 0;
+}
+.contact_form_holder .contact_form_inner form .form_box .row_1 .form_side,
+.contact_form_holder .contact_form_inner form .form_box .row_2 .form_side {
+  height: 115px;
+  width: 100%;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact_form_holder .contact_form_inner form .form_box .row_1 .form_side .form_side_cnt,
+.contact_form_holder .contact_form_inner form .form_box .row_2 .form_side .form_side_cnt {
+  display: grid;
+  width: 100%;
+  max-width: 95%;
+}
+.contact_form_holder .contact_form_inner form .form_box .row_1 .form_side .form_side_cnt label,
+.contact_form_holder .contact_form_inner form .form_box .row_2 .form_side .form_side_cnt label {
+  font-family: "Open Sans Bold";
+  font-size: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+  color: #004481;
+  margin-bottom: 15px;
+}
+.contact_form_holder .contact_form_inner form .form_box .row_1 .form_side .form_side_cnt label span,
+.contact_form_holder .contact_form_inner form .form_box .row_2 .form_side .form_side_cnt label span {
+  font-size: 16px;
+}
+.contact_form_holder .contact_form_inner form .form_box .row_1 .form_side .form_side_cnt input,
+.contact_form_holder .contact_form_inner form .form_box .row_2 .form_side .form_side_cnt input {
+  font-size: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+  height: 45px;
+  background-color: rgb(242, 241, 241);
+  font-family: "Open Sans Medium";
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 2px solid white;
+}
+.contact_form_holder .contact_form_inner form .form_box .row_3 {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+.contact_form_holder .contact_form_inner form .form_box .row_3 .form_side {
+  height: 115px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact_form_holder .contact_form_inner form .form_box .row_3 .form_side .form_side_cnt {
+  display: grid;
+  max-width: 97%;
+  width: 100%;
+}
+.contact_form_holder .contact_form_inner form .form_box .row_3 .form_side .form_side_cnt label {
+  font-family: "Open Sans Bold";
+  font-size: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+  color: #004481;
+  margin-bottom: 15px;
+}
+.contact_form_holder .contact_form_inner form .form_box .row_3 .form_side .form_side_cnt select {
+  font-size: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+  height: 50px;
+  background-color: rgb(242, 241, 241);
+  font-family: "Open Sans Medium";
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 2px solid white;
+}
+.contact_form_holder .contact_form_inner form .form_box .row_4 .form_side {
+  height: 215px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.contact_form_holder .contact_form_inner form .form_box .row_4 .form_side .form_side_cnt {
+  display: grid;
+  max-width: 97%;
+  width: 100%;
+}
+.contact_form_holder .contact_form_inner form .form_box .row_4 .form_side .form_side_cnt label {
+  font-family: "Open Sans Bold";
+  font-size: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+  color: #004481;
+  margin-bottom: 15px;
+}
+.contact_form_holder .contact_form_inner form .form_box .row_4 .form_side .form_side_cnt textarea {
+  font-size: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+  height: 170px;
+  background-color: rgb(242, 241, 241);
+  font-family: "Open Sans Medium";
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  resize: none;
+  border: 2px solid white;
+}
+.contact_form_holder .contact_form_inner form .form_btns {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  max-width: 900px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.contact_form_holder .contact_form_inner form .form_btns .clear {
+  width: 100%;
+  height: 50px;
+  background-color: #004481;
+  max-width: 150px;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans Semi Bold";
+}
+.contact_form_holder .contact_form_inner form .form_btns .clear:hover {
+  background-color: #0da0da;
+}
+.contact_form_holder .contact_form_inner form .form_btns .send {
+  width: 100%;
+  height: 50px;
+  background-color: #0da0da;
+  max-width: 95px;
+  font-size: 18px;
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans Semi Bold";
+}
+.contact_form_holder .contact_form_inner form .form_btns .send:hover {
+  background-color: #004481;
+}
+
 @media all and (max-width: 1995px) {
   .contact_top {
     height: 310px;
@@ -123,6 +297,25 @@
   .contact_top .overlay .overlay_cnt h1 {
     font-size: clamp(3rem, 3vw, 3rem);
     line-height: 55px;
+  }
+  .contact_above_form {
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+  .contact_above_form .contact_above_form_inner {
+    max-width: 850px;
+  }
+  .contact_above_form .contact_above_form_inner .contact_above_form_inner_cnt h1 {
+    font-size: clamp(3rem, 3vw, 3rem);
+    line-height: 45px;
+    max-width: 850px;
+  }
+  .contact_above_form .contact_above_form_inner .contact_above_form_inner_cnt p {
+    font-size: 19px;
+    max-width: 650px;
+  }
+  .contact_above_form .contact_above_form_inner .contact_above_form_inner_cnt button {
+    max-width: 230px;
   }
 }
 @media all and (max-width: 991px) {
