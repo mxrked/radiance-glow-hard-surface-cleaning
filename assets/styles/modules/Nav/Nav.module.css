@@ -259,7 +259,7 @@
     display: grid;
     justify-content: space-between;
     align-items: center;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(3, auto);
     max-width: 85px;
     text-align: center;
   }
@@ -298,8 +298,8 @@
     display: grid;
     justify-content: space-between;
     align-items: center;
-    grid-template-columns: repeat(2, auto);
-    max-width: 85px;
+    grid-template-columns: repeat(3, auto);
+    max-width: 125px;
     text-align: center;
   }
   .nav_top .nav_top_inner .nav_top_inner_box .nav_top_inner_row .nav_top_L .nav_top_inner_side_cnt span {
