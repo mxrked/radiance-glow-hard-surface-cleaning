@@ -4,7 +4,7 @@
  *
  */
 
-import { FaYelp, FaFacebook, FaYoutube } from "react-icons/fa";
+import { FaYelp, FaFacebook, FaYoutube, FaGoogle } from "react-icons/fa";
 import { SiNextdoor } from "react-icons/si";
 
 import styles from "../../../../styles/modules/Nav/Nav.module.css";
@@ -34,6 +34,25 @@ export const NavTop = () => {
                   // target={"_blank"}
                 >
                   <FaFacebook className={`${styles.icon}`} />
+                </span>
+                <span
+                  onClick={() => {
+                    // window.open(
+                    //   "https://www.facebook.com/RadianceGHSC/",
+                    //   "_blank"
+                    // );
+
+                    const SQ = "radiance glow hard surface cleaning";
+                    const EQ = encodeURIComponent(SQ);
+                    const URL = `https://www.google.com/search?q=${EQ}`;
+
+                    window.open(URL, "_blank");
+                  }}
+                  // href="https://www.facebook.com/RadianceGHSC/"
+                  className="half-second orientation-change-element"
+                  // target={"_blank"}
+                >
+                  <FaGoogle className={`${styles.icon}`} />
                 </span>
                 <span
                   onClick={() => {
