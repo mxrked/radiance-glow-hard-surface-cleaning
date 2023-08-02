@@ -16,6 +16,8 @@ export const ContactForm = () => {
 
   // Displaying form submission success message
   useEffect(() => {
+    console.log(document.getElementById("emailSubject").value);
+
     if (sessionStorage.getItem("Submission Sent")) {
       document.getElementById("formNotice").innerText = "Submission sent!";
       document.getElementById("formNotice").style.color = "green";
@@ -128,7 +130,8 @@ export const ContactForm = () => {
                     id="emailSubject"
                     className="orientation-change-element half-second"
                   >
-                    <option selected={true}>Contact/Support</option>
+                    <option selected={true}>-- NOT SELECTED --</option>
+                    <option>Contact/Support</option>
                     <option>Pressure Washing</option>
                     <option>Tile & Grout Cleaning</option>
                     <option>Carpet Cleaning</option>
