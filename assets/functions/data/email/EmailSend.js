@@ -1,6 +1,6 @@
 /**
  *
- *  This is used to send an email to rtsyvisualsemail@gmail.com using EmailJS
+ *  This is used to send an email to info@radianceglowhsc.com using EmailJS
  *
  */
 
@@ -16,8 +16,8 @@ const PUBLIC_KEY = "9f1hVWFncUz7ATjYn";
 
 emailjs.init(PUBLIC_KEY);
 
-const CURRENT_TIME = new Date().getTime();
-const CURRENT_DATE = new Date().getDate();
+// const CURRENT_TIME = new Date().getTime();
+// const CURRENT_DATE = new Date().getDate();
 
 function CheckForSpaceInFirstCharacter(input) {
   const CHECK_FOR_SPACE = /^\s/.test(input.value);
@@ -30,23 +30,26 @@ function CheckForSpaceInFirstCharacter(input) {
 }
 
 export default function EmailSend(rooter, formTarget) {
-  const COMPANY_NAME = "Radiance Glow HSC";
-  const CREATION_DATE_TIME = `${CURRENT_DATE} - ${CURRENT_TIME}`;
+  // const COMPANY_NAME = "Radiance Glow HSC";
+  // const CREATION_DATE_TIME = `${CURRENT_DATE} - ${CURRENT_TIME}`;
+  const FORM_NOTICE = document.getElementById("formNotice");
   const FIRST_NAME = document.getElementById("emailFirstName");
   const LAST_NAME = document.getElementById("emailLastName");
   const CLIENT_EMAIL_ADDRESS = document.getElementById("emailClientEmail");
   const PHONE_NUMBER = document.getElementById("emailPhoneNumber");
   const SUBJECT = document.getElementById("emailSubject");
+  const SELECTED_INDEX = SUBJECT.selectedIndex;
   const MESSAGE = document.getElementById("emailMessage");
 
   const TEMPLATE_PARAMS = {
-    email_company_name: COMPANY_NAME,
-    email_creation_date_time: CREATION_DATE_TIME,
+    // email_company_name: COMPANY_NAME,
+    // email_creation_date_time: CREATION_DATE_TIME,
     email_first_name: FIRST_NAME.value,
     email_last_name: LAST_NAME.value,
     email_phone_number: PHONE_NUMBER.value,
     email_client_email: CLIENT_EMAIL_ADDRESS.value,
-    email_subject: SUBJECT.value,
+    email_subject:
+      "RGHSC Contact Form Submission - " + SUBJECT.options[SELECTED_INDEX].text,
     email_message: MESSAGE.value,
   };
 
@@ -78,22 +81,21 @@ export default function EmailSend(rooter, formTarget) {
     CLIENT_EMAIL_ADDRESS.value != "" &&
     PHONE_NUMBER.value != "" &&
     SUBJECT.value != "" &&
-    MESSAGE != ""
+    MESSAGE.value != ""
   ) {
     nonEmptyInputs = true;
-
-    // Style the form notice here
-    // .....
+    FORM_NOTICE.style.opacity = 0;
+    FORM_NOTICE.innerHTML = "Test";
 
     if (CHECK_EMAIL) {
       validEmail = true;
-
-      // Style inputs ...
+      FORM_NOTICE.style.opacity = 0;
+      FORM_NOTICE.innerHTML = "Test";
 
       if (CHECK_PHONE_NUMBER) {
         validPhone = true;
-
-        // Style inputs ...
+        FORM_NOTICE.style.opacity = 0;
+        FORM_NOTICE.innerHTML = "Test";
 
         if (
           !SPACE_FIRST_NAME &&
@@ -103,8 +105,8 @@ export default function EmailSend(rooter, formTarget) {
           !SPACE_MESSAGE
         ) {
           noSpacesAsFirstCharacter = true;
-
-          // Style inputs ...
+          FORM_NOTICE.style.opacity = 0;
+          FORM_NOTICE.innerHTML = "Test";
 
           formTarget.preventDefault();
 
@@ -129,22 +131,26 @@ export default function EmailSend(rooter, formTarget) {
             });
         } else {
           noSpacesAsFirstCharacter = false;
-
-          // Hide/Display/Styling ...
+          FORM_NOTICE.style.color = "red";
+          FORM_NOTICE.style.opacity = 1;
+          ("Error: You cannot have a space as the first character in an input.");
         }
       } else {
         validPhone = false;
-
-        // Hide/Display/Styling ...
+        FORM_NOTICE.style.color = "red";
+        FORM_NOTICE.style.opacity = 1;
+        FORM_NOTICE.innerHTML = "Error: That is an invalid phone number.";
       }
     } else {
       validEmail = false;
-
-      // Hide/Display/Styling ...
+      FORM_NOTICE.style.color = "red";
+      FORM_NOTICE.style.opacity = 1;
+      FORM_NOTICE.innerHTML = "Error: That is an invalid email address.";
     }
   } else {
     nonEmptyInputs = false;
-
-    // Hide/Display/Styling ...
+    FORM_NOTICE.style.color = "red";
+    FORM_NOTICE.style.opacity = 1;
+    FORM_NOTICE.innerHTML = "Error: You cannot have empty inputs.";
   }
 }
