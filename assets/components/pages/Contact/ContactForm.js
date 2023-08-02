@@ -16,7 +16,7 @@ export const ContactForm = () => {
 
   // Displaying form submission success message
   useEffect(() => {
-    console.log(document.getElementById("emailSubject").value);
+    // console.log(document.getElementById("emailSubject").value);
 
     if (sessionStorage.getItem("Submission Sent")) {
       document.getElementById("formNotice").innerText = "Submission sent!";
@@ -127,7 +127,7 @@ export const ContactForm = () => {
                   </label>
 
                   <select
-                    id="emailSubject"
+                    id="emailService"
                     className="orientation-change-element half-second"
                   >
                     <option selected={true}>-- NOT SELECTED --</option>
@@ -140,13 +140,38 @@ export const ContactForm = () => {
                 </div>
               </div>
             </div>
+            <div className={`${styles.form_row} ${styles.row_5} row`}>
+              <div
+                className={`${styles.form_side} col-lg-12 col-md-12 col-sm-12 col-xs-12`}
+              >
+                <div className={`${styles.form_side_cnt}`}>
+                  <label className="orientation-change-element half-second">
+                    Type of Location
+                  </label>
+
+                  <select
+                    id="emailLocation"
+                    className="orientation-change-element half-second"
+                  >
+                    <option selected={true}>-- NOT SELECTED --</option>
+                    <option>My Home</option>
+                    <option>Hotels</option>
+                    <option>Schools</option>
+                    <option>Assisted Living Facilities</option>
+                    <option>Low & High Rise Office Buildings</option>
+                    <option>Common Areas</option>
+                    <option>Call Centers</option>
+                  </select>
+                </div>
+              </div>
+            </div>
             <div className={`${styles.form_row} ${styles.row_4} row`}>
               <div
                 className={`${styles.form_side} col-lg-12 col-md-12 col-sm-12 col-xs-12`}
               >
                 <div className={`${styles.form_side_cnt}`}>
                   <label className="orientation-change-element half-second">
-                    Message/Comments
+                    Message/Details
                   </label>
 
                   <textarea

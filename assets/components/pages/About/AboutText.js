@@ -16,7 +16,7 @@ export const AboutText = () => {
         </h1>
 
         <p className="orientation-change-element half-second">
-          Radiance Glow Hard Surface Cleaning is a fully licensed and insured
+          Radiance Glow Hard Surface Cleaning is a fully licensed and bonded
           company with the goal of providing our customers with astonishing
           service and the best investment in cleaning and restoring hard
           surfaces as well as carpet.
