@@ -137,7 +137,7 @@
   white-space: pre-wrap;
 }
 .contact_form_holder .contact_form_inner form {
-  height: 700px;
+  height: 860px;
 }
 .contact_form_holder .contact_form_inner form .form_box {
   padding: 0;
@@ -182,28 +182,33 @@
   padding-right: 10px;
   border: 2px solid white;
 }
-.contact_form_holder .contact_form_inner form .form_box .row_3 {
+.contact_form_holder .contact_form_inner form .form_box .row_3,
+.contact_form_holder .contact_form_inner form .form_box .row_5 {
   margin-top: 5px;
   margin-bottom: 20px;
 }
-.contact_form_holder .contact_form_inner form .form_box .row_3 .form_side {
+.contact_form_holder .contact_form_inner form .form_box .row_3 .form_side,
+.contact_form_holder .contact_form_inner form .form_box .row_5 .form_side {
   height: 115px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.contact_form_holder .contact_form_inner form .form_box .row_3 .form_side .form_side_cnt {
+.contact_form_holder .contact_form_inner form .form_box .row_3 .form_side .form_side_cnt,
+.contact_form_holder .contact_form_inner form .form_box .row_5 .form_side .form_side_cnt {
   display: grid;
   max-width: 97%;
   width: 100%;
 }
-.contact_form_holder .contact_form_inner form .form_box .row_3 .form_side .form_side_cnt label {
+.contact_form_holder .contact_form_inner form .form_box .row_3 .form_side .form_side_cnt label,
+.contact_form_holder .contact_form_inner form .form_box .row_5 .form_side .form_side_cnt label {
   font-family: "Open Sans Bold";
   font-size: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
   color: #004481;
   margin-bottom: 15px;
 }
-.contact_form_holder .contact_form_inner form .form_box .row_3 .form_side .form_side_cnt select {
+.contact_form_holder .contact_form_inner form .form_box .row_3 .form_side .form_side_cnt select,
+.contact_form_holder .contact_form_inner form .form_box .row_5 .form_side .form_side_cnt select {
   font-size: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
   height: 50px;
   background-color: rgb(242, 241, 241);
