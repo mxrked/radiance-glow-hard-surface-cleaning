@@ -19,6 +19,18 @@ export const AboutReviews = () => {
           <br /> Reviews.
         </h1>
 
+        <button
+          className="orientation-change-element half-second"
+          onClick={() => {
+            const URL =
+              "https://reviewthis.biz/radiance-glow-hard-surface-cleaning";
+
+            window.open(URL, "_self");
+          }}
+        >
+          <span>Leave A Review</span>
+        </button>
+
         <div className={`${styles.about_reviews_inner_reviews}`}>
           <div
             className={`${styles.about_reviews_inner_reviews_box} container-fluid`}
