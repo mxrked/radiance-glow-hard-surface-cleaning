@@ -16,15 +16,26 @@ const INDEX_PRESSURE_WASHING_BG = CDNBGReturn(
   "pressure-washing-bg",
   "webp"
 );
+const INDEX_PRESSURE_WASHING_REPLACEMENT_BG = CDNBGReturn(
+  "index",
+  "green-pressure-washer",
+  "webp"
+);
 const INDEX_TILE_AND_GROUT_CLEANING_BG = CDNBGReturn(
   "index",
   "tile-and-grout-cleaning-bg",
   "webp"
 );
+const INDEX_MEXICAN_TILES_BG = CDNBGReturn("index", "mexican-tiles", "webp");
 const INDEX_TOP_BG = CDNBGReturn("index", "top-bg", "webp");
 const INDEX_UPHOLSTERY_CLEANING_BG = CDNBGReturn(
   "index",
   "upholstery-cleaning-bg",
+  "webp"
+);
+const INDEX_UPHOLSTERY_CLEANING_REPLACEMENT_BG = CDNBGReturn(
+  "index",
+  "upholstery",
   "webp"
 );
 const INDEX_VACCUM_CLEANING_BG = CDNBGReturn(
@@ -64,6 +75,9 @@ export {
   INDEX_TOP_BG,
   INDEX_UPHOLSTERY_CLEANING_BG,
   INDEX_VACCUM_CLEANING_BG,
+  INDEX_PRESSURE_WASHING_REPLACEMENT_BG,
+  INDEX_UPHOLSTERY_CLEANING_REPLACEMENT_BG,
+  INDEX_MEXICAN_TILES_BG,
 };
 export {
   ABOUT_CARPET_CLEANING_BG,
