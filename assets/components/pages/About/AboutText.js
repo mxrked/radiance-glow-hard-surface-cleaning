@@ -32,10 +32,11 @@ export const AboutText = () => {
         </p>
 
         <p className="orientation-change-element half-second">
-          We are a local family owned business that specializes in tile and
-          grout cleaning, natural stone cleaning, carpet cleaning and pressure
-          washing. We can seal any surface to protect it and have amazing
-          results in our cleaning.
+          Radiance Glow is locally owned and has been in business since 2012.
+          Its provided services consist of: tile and grout cleaning, natural
+          stone cleaning, carpet cleaning, upholstery, wood floor cleaning,
+          driveway/decks and cement/decks and pressure washing. All of which is
+          applied with professional clear coatings.
         </p>
       </div>
     </section>
