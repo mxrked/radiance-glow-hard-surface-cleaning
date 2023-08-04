@@ -22,7 +22,7 @@ Demo: radianceglowhsc.com
 
 ## Started Developement - 7/14/2023
 
-## Ended Development - IN PROGRESS
+## Ended Development - 8/4/2023
 
 ## Status
 
