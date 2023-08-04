@@ -6,7 +6,11 @@
 
 import { BackgroundImage } from "react-image-and-background-image-fade";
 
-import { INDEX_PRESSURE_WASHING_BG } from "@/assets/cdns/CDNBgs";
+import {
+  INDEX_PRESSURE_WASHING_BG,
+  INDEX_PRESSURE_WASHING_REPLACEMENT_BG,
+  INDEX_MEXICAN_TILES_BG,
+} from "@/assets/cdns/CDNBgs";
 
 import styles from "../../../styles/modules/Index/Index.module.css";
 
@@ -24,7 +28,7 @@ export const IndexServices = () => {
             >
               <div className={`${styles.index_services_inner_side_cnt}`}>
                 <BackgroundImage
-                  src={INDEX_PRESSURE_WASHING_BG}
+                  src={INDEX_MEXICAN_TILES_BG}
                   className={`${styles.bg}`}
                   width="100%"
                   height="100%"

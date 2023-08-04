@@ -7,7 +7,10 @@ import { useEffect } from "react";
 
 import { BackgroundImage } from "react-image-and-background-image-fade";
 
-import { INDEX_UPHOLSTERY_CLEANING_BG } from "@/assets/cdns/CDNBgs";
+import {
+  INDEX_UPHOLSTERY_CLEANING_BG,
+  INDEX_UPHOLSTERY_CLEANING_REPLACEMENT_BG,
+} from "@/assets/cdns/CDNBgs";
 
 import styles from "../../../styles/modules/Index/Index.module.css";
 
@@ -93,7 +96,7 @@ export const IndexAbout = () => {
             >
               <div className={`${styles.index_about_inner_side_cnt}`}>
                 <BackgroundImage
-                  src={INDEX_UPHOLSTERY_CLEANING_BG}
+                  src={INDEX_UPHOLSTERY_CLEANING_REPLACEMENT_BG}
                   className={`${styles.bg}`}
                   width="100%"
                   height="100%"

@@ -6,7 +6,10 @@
 
 import { BackgroundImage } from "react-image-and-background-image-fade";
 
-import { CONTACT_TOP_BG } from "@/assets/cdns/CDNBgs";
+import {
+  CONTACT_TOP_BG,
+  INDEX_UPHOLSTERY_CLEANING_REPLACEMENT_BG,
+} from "@/assets/cdns/CDNBgs";
 
 import styles from "../../../styles/modules/Contact/Contact.module.css";
 
@@ -17,7 +20,7 @@ export const ContactTop = () => {
       className={`${styles.contact_top} overrides_ContactTop fm-motion`}
     >
       <BackgroundImage
-        src={CONTACT_TOP_BG}
+        src={INDEX_UPHOLSTERY_CLEANING_REPLACEMENT_BG}
         width="100%"
         height="100%"
         className={`${styles.bg}`}
