@@ -79,7 +79,11 @@ export const IndexAbout = () => {
                 </h1>
 
                 <p className="orientation-change-element">
-                  We are a local family owned business since 2012.
+                  We aren't your typical franchise or subcontractor for a
+                  national cleaning company. What we are is a locally owned
+                  company that provides dependable, quality cleaning services
+                  for homes and small businesses. We have been in business since
+                  2012.
                 </p>
 
                 <a href="/about" className="half-second">
