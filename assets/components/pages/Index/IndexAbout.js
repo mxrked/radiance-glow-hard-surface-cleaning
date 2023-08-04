@@ -78,7 +78,8 @@ export const IndexAbout = () => {
                 <p className="orientation-change-element">
                   We are a local family owned business that specializes in tile
                   and grout cleaning, natural stone cleaning, carpet cleaning
-                  and pressure washing.
+                  and pressure washing. Learn it has been in business since
+                  2012.
                 </p>
 
                 <a href="/about" className="half-second">

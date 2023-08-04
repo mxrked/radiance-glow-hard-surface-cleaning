@@ -40,10 +40,13 @@ export const IndexServices = () => {
                 </h1>
 
                 <p className="orientation-change-element">
-                  Radiance Glow Hard Surface Cleaning is a fully licensed and
-                  bonded company with the goal of providing our customers with
+                  Radiance Glow Hard Surface Cleaning is a insured and bonded
+                  company with the goal of providing our customers with
                   astonishing service and the best investment in cleaning and
-                  restoring hard surfaces as well as carpet.
+                  restoring hard surfaces as well as carpet cleaning. We also do
+                  tile-grout cleaning, upholstery, wood floor cleaning, driveway
+                  and decks and cement and decks. All of which are done by
+                  applying professional clear coatings.
                   <br />
                   <br />
                   We help any of the following locations: hotels, schools,
