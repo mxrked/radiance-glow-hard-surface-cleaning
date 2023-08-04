@@ -49,8 +49,8 @@ export const IndexServices = () => {
                   astonishing service and the best investment in cleaning and
                   restoring hard surfaces as well as carpet cleaning. We also do
                   tile-grout cleaning, upholstery, wood floor cleaning, cement
-                  driveways and wooden decks and cement and wooden decks. All of
-                  which are done by applying professional clear coatings.
+                  driveways and wooden decks. We also apply professional clear
+                  coatings.
                   <br />
                   <br />
                   We help any of the following locations: residential homes,

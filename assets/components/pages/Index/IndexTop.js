@@ -34,7 +34,7 @@ export const IndexTop = () => {
             A local NC cleaning service which includes:
             <br />
             Pressure-washing, carpet cleaning, tile-grout cleaning, upholstery,
-            wood floor cleaning, driveway and decks and cement and decks.
+            wood floor cleaning, cement driveways and decks.
           </p>
 
           <div className={`${styles.overlay_cnt_links}`}>
