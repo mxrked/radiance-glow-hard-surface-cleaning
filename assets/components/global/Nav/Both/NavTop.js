@@ -26,7 +26,7 @@ export const NavTop = () => {
                   onClick={() => {
                     window.open(
                       "https://www.facebook.com/RadianceGHSC/",
-                      "_blank"
+                      "_self"
                     );
                   }}
                   // href="https://www.facebook.com/RadianceGHSC/"
@@ -46,7 +46,7 @@ export const NavTop = () => {
                     const EQ = encodeURIComponent(SQ);
                     const URL = `https://www.google.com/search?q=${EQ}`;
 
-                    window.open(URL, "_blank");
+                    window.open(URL, "_self");
                   }}
                   // href="https://www.facebook.com/RadianceGHSC/"
                   className="half-second orientation-change-element"
@@ -58,7 +58,7 @@ export const NavTop = () => {
                   onClick={() => {
                     window.open(
                       "https://www.yelp.com/biz/radiance-glow-hard-surface-cleaning-high-point-4",
-                      "_blank"
+                      "_self"
                     );
                   }}
                   // href="https://www.yelp.com/biz/radiance-glow-hard-surface-cleaning-high-point-4"
@@ -71,7 +71,7 @@ export const NavTop = () => {
                   onClick={() => {
                     window.open(
                       "https://nextdoor.com/pages/radiance-glow-hard-surface-cleaning-high-point-nc/",
-                      "_blank"
+                      "_self"
                     );
                   }}
                   // href="https://nextdoor.com/pages/radiance-glow-hard-surface-cleaning-high-point-nc/"
@@ -84,7 +84,7 @@ export const NavTop = () => {
                   onClick={() => {
                     window.open(
                       "https://www.youtube.com/channel/UCJoeDkbDMPAFf_haCa5tRYQ",
-                      "_blank"
+                      "_self"
                     );
                   }}
                   // href="https://www.youtube.com/channel/UCJoeDkbDMPAFf_haCa5tRYQ"
