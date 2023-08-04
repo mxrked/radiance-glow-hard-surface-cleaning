@@ -16,10 +16,10 @@ export const AboutText = () => {
         </h1>
 
         <p className="orientation-change-element half-second">
-          Radiance Glow Hard Surface Cleaning is a fully licensed and bonded
-          company with the goal of providing our customers with astonishing
-          service and the best investment in cleaning and restoring hard
-          surfaces as well as carpet.
+          Radiance Glow Hard Surface Cleaning is an insured and bonded company
+          with the goal of providing our customers with astonishing service and
+          the best investment in cleaning and restoring hard surfaces as well as
+          carpet.
         </p>
 
         <p className="orientation-change-element half-second">
@@ -32,11 +32,10 @@ export const AboutText = () => {
         </p>
 
         <p className="orientation-change-element half-second">
-          Radiance Glow is locally owned and has been in business since 2012.
-          Its provided services consist of: tile and grout cleaning, natural
-          stone cleaning, carpet cleaning, upholstery, wood floor cleaning,
-          driveway/decks and cement/decks and pressure washing. All of which is
-          applied with professional clear coatings.
+          We are locally owned, and have been in business since 2012. We
+          specialize in tile and grout cleaning, natural stone cleaning, carpet
+          cleaning and pressure washing. For carpets we offer hot water
+          extraction, or low moisture cleaning (encapsulation method).
         </p>
       </div>
     </section>
