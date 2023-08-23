@@ -76,12 +76,13 @@
 
       ul {
         display: grid;
+        align-items: center;
         grid-template-columns: repeat(2, auto);
         font-family: "Open Sans Bold";
         font-size: $Link;
         color: white;
         white-space: pre-wrap;
-        max-width: 640px;
+        max-width: 540px;
         @include quickCenter("relative");
         margin-bottom: 45px;
       }
@@ -436,6 +437,14 @@
 
         p {
           font-size: clamp(19px, 21px, 21px);
+        }
+
+        ul {
+          display: grid;
+          grid-template-columns: repeat(2, auto);
+          font-size: clamp(13px, 13px, 13px);
+          max-width: 390px;
+          margin-bottom: 30px;
         }
 
         .overlay_cnt_links {
@@ -952,7 +961,7 @@
 // Pixel 2 XL
 @media only screen and (min-device-width: 411px) and (max-device-width: 823px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .index_top {
-    height: 320px;
+    height: 360px;
 
     .overlay {
       .overlay_cnt {
@@ -981,6 +990,7 @@
           grid-template-columns: repeat(2, auto);
           font-size: clamp(13px, 13px, 13px);
           max-width: 390px;
+          margin-bottom: 30px;
         }
 
         .overlay_cnt_links {
@@ -1412,7 +1422,7 @@
           .index_services_inner_side {
             max-width: 100%;
             width: 100%;
-            height: 465px;
+            height: 635px;
           }
 
           .index_services_L {
@@ -1448,6 +1458,10 @@
                 max-width: 390px;
                 @include quickCenter("relative");
                 margin-bottom: 30px;
+              }
+
+              ul {
+                font-size: clamp(15px, 15px, 15px);
               }
 
               a {
@@ -1579,6 +1593,11 @@
           margin-bottom: 30px;
         }
 
+        ul {
+          grid-template-columns: repeat(2, auto);
+          max-width: 500px;
+        }
+
         .overlay_cnt_links {
           max-width: 360px;
           display: flex;
@@ -1611,7 +1630,7 @@
           .index_services_inner_side {
             max-width: 100%;
             width: 100%;
-            height: 525px;
+            height: 795px;
           }
 
           .index_services_L {
@@ -1753,7 +1772,7 @@
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .index_top {
-    height: 540px;
+    height: 590px;
 
     .overlay {
       .overlay_cnt {
@@ -1775,6 +1794,10 @@
           @include quickCenter("relative");
           margin-top: 20px;
           margin-bottom: 30px;
+        }
+
+        ul {
+          grid-template-columns: repeat(2, auto);
         }
 
         .overlay_cnt_links {
@@ -1809,7 +1832,7 @@
           .index_services_inner_side {
             max-width: 100%;
             width: 100%;
-            height: 525px;
+            height: 795px;
           }
 
           .index_services_L {
@@ -2008,7 +2031,7 @@
           .index_services_inner_side {
             max-width: 100%;
             width: 100%;
-            height: 625px;
+            height: 795px;
           }
 
           .index_services_L {

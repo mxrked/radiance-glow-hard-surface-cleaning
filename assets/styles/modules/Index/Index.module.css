@@ -69,12 +69,13 @@
 }
 .index_top .overlay .overlay_cnt ul {
   display: grid;
+  align-items: center;
   grid-template-columns: repeat(2, auto);
   font-family: "Open Sans Bold";
   font-size: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
   color: white;
   white-space: pre-wrap;
-  max-width: 640px;
+  max-width: 540px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 45px;
@@ -370,6 +371,13 @@
   }
   .index_top .overlay .overlay_cnt p {
     font-size: 21px;
+  }
+  .index_top .overlay .overlay_cnt ul {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    font-size: 13px;
+    max-width: 390px;
+    margin-bottom: 30px;
   }
   .index_top .overlay .overlay_cnt .overlay_cnt_links {
     max-width: 360px;
@@ -768,7 +776,7 @@
 }
 @media only screen and (min-device-width: 411px) and (max-device-width: 823px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .index_top {
-    height: 320px;
+    height: 360px;
   }
   .index_top .overlay .overlay_cnt {
     padding-top: 15px;
@@ -794,6 +802,7 @@
     grid-template-columns: repeat(2, auto);
     font-size: 13px;
     max-width: 390px;
+    margin-bottom: 30px;
   }
   .index_top .overlay .overlay_cnt .overlay_cnt_links {
     max-width: 320px;
@@ -1144,7 +1153,7 @@
   .index_services .index_services_inner .index_services_inner_box .index_services_inner_row .index_services_inner_side {
     max-width: 100%;
     width: 100%;
-    height: 465px;
+    height: 635px;
   }
   .index_services .index_services_inner .index_services_inner_box .index_services_inner_row .index_services_L {
     max-width: 40%;
@@ -1177,6 +1186,9 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
+  }
+  .index_services .index_services_inner .index_services_inner_box .index_services_inner_row .index_services_R .index_services_inner_side_cnt ul {
+    font-size: 15px;
   }
   .index_services .index_services_inner .index_services_inner_box .index_services_inner_row .index_services_R .index_services_inner_side_cnt a {
     font-size: 14px;
@@ -1281,6 +1293,10 @@
     margin-top: 20px;
     margin-bottom: 30px;
   }
+  .index_top .overlay .overlay_cnt ul {
+    grid-template-columns: repeat(2, auto);
+    max-width: 500px;
+  }
   .index_top .overlay .overlay_cnt .overlay_cnt_links {
     max-width: 360px;
     display: flex;
@@ -1305,7 +1321,7 @@
   .index_services .index_services_inner .index_services_inner_box .index_services_inner_row .index_services_inner_side {
     max-width: 100%;
     width: 100%;
-    height: 525px;
+    height: 795px;
   }
   .index_services .index_services_inner .index_services_inner_box .index_services_inner_row .index_services_L {
     max-width: 40%;
@@ -1421,7 +1437,7 @@
 }
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .index_top {
-    height: 540px;
+    height: 590px;
   }
   .index_top .overlay .overlay_cnt {
     padding-top: 0px;
@@ -1441,6 +1457,9 @@
     margin-right: auto;
     margin-top: 20px;
     margin-bottom: 30px;
+  }
+  .index_top .overlay .overlay_cnt ul {
+    grid-template-columns: repeat(2, auto);
   }
   .index_top .overlay .overlay_cnt .overlay_cnt_links {
     max-width: 360px;
@@ -1466,7 +1485,7 @@
   .index_services .index_services_inner .index_services_inner_box .index_services_inner_row .index_services_inner_side {
     max-width: 100%;
     width: 100%;
-    height: 525px;
+    height: 795px;
   }
   .index_services .index_services_inner .index_services_inner_box .index_services_inner_row .index_services_L {
     max-width: 40%;
@@ -1627,7 +1646,7 @@
   .index_services .index_services_inner .index_services_inner_box .index_services_inner_row .index_services_inner_side {
     max-width: 100%;
     width: 100%;
-    height: 625px;
+    height: 795px;
   }
   .index_services .index_services_inner .index_services_inner_box .index_services_inner_row .index_services_L {
     max-width: 40%;
