@@ -37,6 +37,8 @@ export const Footer = (props) => {
                   {props.disableLink === "/" ? (
                     <div className={`${styles.logo} ${styles.deactive}`}>
                       <img
+                        width={240}
+                        height={80}
                         data-src={LOGO}
                         className="lazyload"
                         alt="Radiance Glow HSC Logo."
@@ -46,6 +48,8 @@ export const Footer = (props) => {
                     <div className={`${styles.logo} ${styles.active}`}>
                       <a href="/">
                         <img
+                          width={240}
+                          height={80}
                           data-src={LOGO}
                           className="lazyload"
                           alt="Radiance Glow HSC Logo."

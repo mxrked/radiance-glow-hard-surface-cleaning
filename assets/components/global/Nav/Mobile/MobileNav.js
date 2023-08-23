@@ -25,6 +25,8 @@ export const MobileNav = (props) => {
                 {props.disableLink === "/" ? (
                   <div className={`${styles.logo} ${styles.deactive}`}>
                     <img
+                      width={170}
+                      height={60}
                       data-src={LOGO}
                       className="lazyload"
                       alt="Radiance Glow HSC Logo."
@@ -34,6 +36,8 @@ export const MobileNav = (props) => {
                   <div className={`${styles.logo} ${styles.active}`}>
                     <a href="/">
                       <img
+                        width={170}
+                        height={60}
                         data-src={LOGO}
                         className="lazyload"
                         alt="Radiance Glow HSC Logo."
