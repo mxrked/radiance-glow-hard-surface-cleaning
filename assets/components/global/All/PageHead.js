@@ -88,11 +88,9 @@ export const PageHead = () => {
   return (
     <Head id="pageHead">
       <title>{title}</title>
-
       <meta name="keywords" content={kws} />
       <meta name="description" content={desc} />
       <meta name="robots" content={robots} />
-
       <meta property="og:title" content={title} />
       <meta property="og:type" content="website" />
       <meta property="og:locale" content="en_GB" />
@@ -109,9 +107,7 @@ export const PageHead = () => {
         content="V5Rtva_ZUQGbD75j-mxlBzvediiQnPt2hEi7YaPPAEE"
       />
         */}
-
       <link rel="canonical" href={url} />
-
       <link
         rel="shortcut icon"
         href="https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/radiance-glow-hard-surface-cleaning/icons/tab-icons/favicon.ico"
@@ -133,6 +129,20 @@ export const PageHead = () => {
         sizes="16x16"
         href="https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/radiance-glow-hard-surface-cleaning/icons/tab-icons/favicon-16x16.png"
       />
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-HELL701LJE"
+      ></script>{" "}
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HELL701LJE');
+        `,
+        }}
+      ></script>
     </Head>
   );
 };
