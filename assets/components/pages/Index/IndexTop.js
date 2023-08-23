@@ -41,7 +41,9 @@ export const IndexTop = () => {
             <li>Tile-grout cleaning</li>
             <li>Upholstery</li>
             <li>Wood floor cleaning</li>
-            <li>Cement driveways/decks</li>
+            <li>Cement driveways</li>
+            <li>Wooden decks</li>
+            <li>Stone Cleaning</li>
           </ul>
 
           <div className={`${styles.overlay_cnt_links}`}>
