@@ -48,9 +48,20 @@ export const IndexServices = () => {
                   company with the goal of providing our customers with
                   astonishing service and the best investment in cleaning and
                   restoring hard surfaces as well as carpet cleaning. We also do
-                  tile-grout cleaning, upholstery, wood floor cleaning, cement
-                  driveways and wooden decks. We also apply professional clear
-                  coatings.
+                  the following:
+                  <br />
+                </p>
+
+                <ul>
+                  <li>Tile-grout cleaning</li>
+                  <li>Upholstery</li>
+                  <li>Wood floor cleaning</li>
+                  <li>Cement driveways</li>
+                  <li>Wooden decks</li>
+                </ul>
+
+                <p className="orientation-change-element">
+                  We also apply professional clear coatings.
                   <br />
                   <br />
                   We help any of the following locations: residential homes,

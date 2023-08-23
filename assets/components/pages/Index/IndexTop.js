@@ -33,9 +33,16 @@ export const IndexTop = () => {
           <p className="orientation-change-element half-second">
             A local NC cleaning service which includes:
             <br />
-            Pressure-washing, carpet cleaning, tile-grout cleaning, upholstery,
-            wood floor cleaning, cement driveways and decks.
           </p>
+
+          <ul>
+            <li>Pressure-washing</li>
+            <li>Carpet cleaning</li>
+            <li>Tile-grout cleaning</li>
+            <li>Upholstery</li>
+            <li>Wood floor cleaning</li>
+            <li>Cement driveways/decks</li>
+          </ul>
 
           <div className={`${styles.overlay_cnt_links}`}>
             <a
