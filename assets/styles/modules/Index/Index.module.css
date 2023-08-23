@@ -67,6 +67,18 @@
   margin-bottom: 50px;
   white-space: pre-wrap;
 }
+.index_top .overlay .overlay_cnt ul {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  font-family: "Open Sans Bold";
+  font-size: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+  color: white;
+  white-space: pre-wrap;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 45px;
+}
 .index_top .overlay .overlay_cnt .overlay_cnt_links {
   display: flex;
   justify-content: space-evenly;
@@ -105,7 +117,7 @@
   margin-top: 0px;
 }
 .index_services .index_services_inner .index_services_inner_box .index_services_inner_row .index_services_inner_side {
-  height: 850px;
+  height: 920px;
   display: flex;
   align-items: center;
   padding: 0;
@@ -145,8 +157,20 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 25px;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
   white-space: pre-wrap;
+}
+.index_services .index_services_inner .index_services_inner_box .index_services_inner_row .index_services_R .index_services_inner_side_cnt ul {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  font-family: "Open Sans Bold";
+  font-size: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+  white-space: pre-wrap;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 35px;
 }
 .index_services .index_services_inner .index_services_inner_box .index_services_inner_row .index_services_R .index_services_inner_side_cnt a {
   width: 100%;
@@ -580,7 +604,7 @@
 }
 @media all and (max-width: 419px) {
   .index_top {
-    height: 430px;
+    height: 490px;
   }
   .index_top .overlay .overlay_cnt {
     padding: 0;
@@ -596,6 +620,11 @@
     margin-right: auto;
     margin-top: 20px;
     margin-bottom: 30px;
+  }
+  .index_top .overlay .overlay_cnt ul {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    font-size: 13px;
   }
   .index_top .overlay .overlay_cnt .overlay_cnt_links {
     max-width: 360px;
@@ -653,6 +682,10 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
+  }
+  .index_services .index_services_inner .index_services_inner_box .index_services_inner_row .index_services_R .index_services_inner_side_cnt ul {
+    margin-top: 25px;
+    font-size: 13px;
   }
   .index_services .index_services_inner .index_services_inner_box .index_services_inner_row .index_services_R .index_services_inner_side_cnt a {
     font-size: 13px;
@@ -735,7 +768,7 @@
 }
 @media only screen and (min-device-width: 411px) and (max-device-width: 823px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .index_top {
-    height: 280px;
+    height: 320px;
   }
   .index_top .overlay .overlay_cnt {
     padding-top: 15px;
@@ -755,6 +788,12 @@
     margin-right: auto;
     margin-top: 20px;
     margin-bottom: 30px;
+  }
+  .index_top .overlay .overlay_cnt ul {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    font-size: 13px;
+    max-width: 390px;
   }
   .index_top .overlay .overlay_cnt .overlay_cnt_links {
     max-width: 320px;
@@ -812,6 +851,13 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
+  }
+  .index_services .index_services_inner .index_services_inner_box .index_services_inner_row .index_services_R .index_services_inner_side_cnt ul {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    font-size: 13px;
+    max-width: 390px;
+    margin-top: 28px;
   }
   .index_services .index_services_inner .index_services_inner_box .index_services_inner_row .index_services_R .index_services_inner_side_cnt a {
     font-size: 13px;
@@ -1053,7 +1099,7 @@
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
   .index_top {
-    height: 300px;
+    height: 360px;
   }
   .index_top .overlay .overlay_cnt {
     padding-top: 0px;
@@ -1098,7 +1144,7 @@
   .index_services .index_services_inner .index_services_inner_box .index_services_inner_row .index_services_inner_side {
     max-width: 100%;
     width: 100%;
-    height: 365px;
+    height: 465px;
   }
   .index_services .index_services_inner .index_services_inner_box .index_services_inner_row .index_services_L {
     max-width: 40%;

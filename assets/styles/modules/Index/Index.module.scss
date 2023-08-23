@@ -74,6 +74,18 @@
         white-space: pre-wrap;
       }
 
+      ul {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        font-family: "Open Sans Bold";
+        font-size: $Link;
+        color: white;
+        white-space: pre-wrap;
+        max-width: 640px;
+        @include quickCenter("relative");
+        margin-bottom: 45px;
+      }
+
       .overlay_cnt_links {
         @include displayElement(flex, space-evenly, center);
         max-width: 500px;
@@ -118,7 +130,7 @@
     .index_services_inner_box {
       .index_services_inner_row {
         .index_services_inner_side {
-          height: 850px;
+          height: 920px;
           display: flex;
           align-items: center;
           padding: 0;
@@ -161,8 +173,21 @@
               max-width: 940px;
               @include quickCenter("relative");
               margin-top: 25px;
-              margin-bottom: 50px;
+              margin-bottom: 35px;
               white-space: pre-wrap;
+            }
+
+            ul {
+              display: grid;
+              grid-template-columns: repeat(1, auto);
+              font-family: "Open Sans Bold";
+              font-size: $Link;
+              // color: white;
+              white-space: pre-wrap;
+              max-width: 640px;
+              @include quickCenter("relative");
+              margin-top: 0px;
+              margin-bottom: 35px;
             }
 
             a {
@@ -726,7 +751,7 @@
 // Smaller Devices (Phones)
 @media all and (max-width: 419px) {
   .index_top {
-    height: 430px;
+    height: 490px;
 
     .overlay {
       .overlay_cnt {
@@ -743,6 +768,12 @@
           @include quickCenter("relative");
           margin-top: 20px;
           margin-bottom: 30px;
+        }
+
+        ul {
+          display: grid;
+          grid-template-columns: repeat(1, auto);
+          font-size: clamp(13px, 13px, 13px);
         }
 
         .overlay_cnt_links {
@@ -811,6 +842,11 @@
                 max-width: 370px;
                 @include quickCenter("relative");
                 margin-bottom: 30px;
+              }
+
+              ul {
+                margin-top: 25px;
+                font-size: clamp(13px, 13px, 13px);
               }
 
               a {
@@ -916,7 +952,7 @@
 // Pixel 2 XL
 @media only screen and (min-device-width: 411px) and (max-device-width: 823px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .index_top {
-    height: 280px;
+    height: 320px;
 
     .overlay {
       .overlay_cnt {
@@ -938,6 +974,13 @@
           @include quickCenter("relative");
           margin-top: 20px;
           margin-bottom: 30px;
+        }
+
+        ul {
+          display: grid;
+          grid-template-columns: repeat(2, auto);
+          font-size: clamp(13px, 13px, 13px);
+          max-width: 390px;
         }
 
         .overlay_cnt_links {
@@ -1006,6 +1049,14 @@
                 max-width: 470px;
                 @include quickCenter("relative");
                 margin-bottom: 30px;
+              }
+
+              ul {
+                display: grid;
+                grid-template-columns: repeat(1, auto);
+                font-size: clamp(13px, 13px, 13px);
+                max-width: 390px;
+                margin-top: 28px;
               }
 
               a {
@@ -1305,7 +1356,7 @@
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
   .index_top {
-    height: 300px;
+    height: 360px;
 
     .overlay {
       .overlay_cnt {
@@ -1361,7 +1412,7 @@
           .index_services_inner_side {
             max-width: 100%;
             width: 100%;
-            height: 365px;
+            height: 465px;
           }
 
           .index_services_L {
