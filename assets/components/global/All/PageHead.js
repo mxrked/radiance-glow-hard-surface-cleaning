@@ -131,7 +131,7 @@ export const PageHead = () => {
       />
       <script
         async
-        src="https://www.googletagmanager.com/gtag/js?id=G-HELL701LJE"
+        src="https://www.googletagmanager.com/gtag/js?id=G-LG0XC1JBKV"
       ></script>{" "}
       <script
         dangerouslySetInnerHTML={{
@@ -139,7 +139,8 @@ export const PageHead = () => {
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-HELL701LJE');
+        
+          gtag('config', 'G-LG0XC1JBKV');
         `,
         }}
       ></script>
