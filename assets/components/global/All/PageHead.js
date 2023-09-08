@@ -131,18 +131,18 @@ export const PageHead = () => {
       />
       <script
         async
-        src="https://www.googletagmanager.com/gtag/js?id=G-HELL701LJE"
+        src="https://www.googletagmanager.com/gtag/js?id=G-P1SWCNDVWK"
       ></script>
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
-          window.dataLayer = window.dataLayer || [];   
-          function gtag(){dataLayer.push(arguments);}   
-          gtag('js', new Date());   
-          gtag('config', 'G-HELL701LJE');
-        `,
-        }}
-      ></script>
+      <script>
+        {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-P1SWCNDVWK');
+    `}
+      </script>
     </Head>
   );
 };
