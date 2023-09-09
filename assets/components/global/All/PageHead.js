@@ -131,17 +131,18 @@ export const PageHead = () => {
         href="https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/radiance-glow-hard-surface-cleaning/icons/tab-icons/favicon-16x16.png"
       />
 
-      <script src="https://www.googletagmanager.com/gtag/js?id=G-LE5P5JF8M1" />
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-P1SWCNDVWK"
+      ></script>
       <script
         dangerouslySetInnerHTML={{
           __html: `
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-        
-          gtag('config', 'G-LE5P5JF8M1', {
-            page_path: window.location.pathname
-          });
+
+          gtag('config', 'G-P1SWCNDVWK'); 
         `,
         }}
       ></script>
