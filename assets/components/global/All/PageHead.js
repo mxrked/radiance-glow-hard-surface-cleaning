@@ -131,17 +131,12 @@ export const PageHead = () => {
       />
       <script
         async
-        src="https://www.googletagmanager.com/gtag/js?id=G-P1SWCNDVWK"
+        src="https://www.googletagmanager.com/gtag/js?id=UA-53779304-1"
       ></script>
       <script>
-        {`
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-      gtag('config', 'G-P1SWCNDVWK');
-    `}
+        window.dataLayer = window.dataLayer || []; function gtag()
+        {dataLayer.push(arguments)}
+        gtag('js', new Date()); gtag('config', 'UA-53779304-1');
       </script>
     </Head>
   );
