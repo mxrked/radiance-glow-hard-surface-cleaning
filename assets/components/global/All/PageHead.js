@@ -145,6 +145,7 @@ export const PageHead = () => {
         href="https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/radiance-glow-hard-surface-cleaning/icons/tab-icons/favicon-16x16.png"
       />
 
+      {/** GOOGLE ANALYTICS - G4 Property */}
       <script
         async
         src="https://www.googletagmanager.com/gtag/js?id=G-P1SWCNDVWK"
