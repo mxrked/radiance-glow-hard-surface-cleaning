@@ -131,7 +131,7 @@ export const PageHead = () => {
         href="https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/radiance-glow-hard-surface-cleaning/icons/tab-icons/favicon-16x16.png"
       />
 
-      <script src="https://www.googletagmanager.com/gtag/js?id=G-LG0XC1JBKV" />
+      <script src="https://www.googletagmanager.com/gtag/js?id=G-LE5P5JF8M1" />
       <script
         dangerouslySetInnerHTML={{
           __html: `
