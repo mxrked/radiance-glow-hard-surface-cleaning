@@ -1,6 +1,7 @@
 // React/Next Imports
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
+import Script from "next/script";
 
 // Library Imports
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -204,5 +205,23 @@ export default function App({ Component, pageProps }) {
     }, 500);
   }, [router]);
 
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-LG0XC1JBKV"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics">
+        {`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-LG0XC1JBKV');
+      `}
+      </Script>
+      <Component {...pageProps} />
+    </>
+  );
+  // return;
 }
