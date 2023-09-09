@@ -7,6 +7,7 @@
 import { useRouter } from "next/router";
 
 import Head from "next/head";
+import Script from "next/script";
 
 import {
   INDEX_KWS,
@@ -129,7 +130,8 @@ export const PageHead = () => {
         sizes="16x16"
         href="https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/radiance-glow-hard-surface-cleaning/icons/tab-icons/favicon-16x16.png"
       />
-      <script
+      {/**
+    <script
         async
         src="https://www.googletagmanager.com/gtag/js?id=UA-53779304-1"
       ></script>
@@ -138,6 +140,8 @@ export const PageHead = () => {
         {dataLayer.push(arguments)}
         gtag('js', new Date()); gtag('config', 'UA-53779304-1');
       </script>
+    
+      */}
     </Head>
   );
 };
