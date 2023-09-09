@@ -207,19 +207,6 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
-      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-LG0XC1JBKV"
-        strategy="afterInteractive"
-      />
-      <Script id="google-analytics">
-        {`
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-LG0XC1JBKV');
-      `}
-      </Script>
       <Component {...pageProps} />
     </>
   );
