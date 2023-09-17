@@ -46,10 +46,9 @@ export const IndexTop = () => {
             <li>Stone Cleaning</li>
           </ul>
 
-          <span className={`${styles.carpet_installation}`}>
-            Even carpet installation in local areas such as Trinity, High Point
-            and Greensboro!
-          </span>
+          {/** 
+          
+          */}
 
           <div className={`${styles.overlay_cnt_links}`}>
             <a
