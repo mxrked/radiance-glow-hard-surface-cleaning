@@ -31,7 +31,9 @@ export const IndexContact = () => {
 
           <p className="orientation-change-element">
             There are no surprises and no hidden charges. We'll clean your floor
-            or hard surface like it has never been cleaned before!
+            or hard surface like it has never been cleaned before! Our
+            commitment to transparency means you can trust that the price you're
+            quoted is the price you'll pay, with no unexpected fees or upsells.
           </p>
 
           <a href="/contact" className="half-second">

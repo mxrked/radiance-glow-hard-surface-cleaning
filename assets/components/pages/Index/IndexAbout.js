@@ -86,6 +86,15 @@ export const IndexAbout = () => {
                   2012.
                 </p>
 
+                <p className="orientation-change-element">
+                  At our core, we believe in the power of community. Since 2012,
+                  we've grown by deepening our roots in the neighborhoods we
+                  serve. Our dedicated professionals offer tailored cleaning
+                  services to meet your specific needs, all while maintaining an
+                  eco-friendly approach, ensuring your space looks great and
+                  contributes to a healthier planet.
+                </p>
+
                 <a href="/about" className="half-second">
                   <span>About RGHSC</span>
                 </a>
