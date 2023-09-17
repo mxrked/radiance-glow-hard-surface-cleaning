@@ -51,6 +51,7 @@
 }
 .index_top .overlay .overlay_cnt {
   padding-bottom: 70px;
+  white-space: pre-wrap;
 }
 .index_top .overlay .overlay_cnt h1 {
   font-family: "Open Sans Extra Bold";
@@ -113,12 +114,22 @@
 .index_top .overlay .overlay_cnt .overlay_cnt_links .contact_link:hover {
   background-color: #0da0da;
 }
+.index_top .overlay .overlay_cnt .carpet_installation {
+  font-family: "Open Sans Bold";
+  font-size: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+  color: white;
+  margin-bottom: 30px;
+  display: block;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .index_services {
   margin-top: 0px;
 }
 .index_services .index_services_inner .index_services_inner_box .index_services_inner_row .index_services_inner_side {
-  height: 920px;
+  height: 1000px;
   display: flex;
   align-items: center;
   padding: 0;
@@ -379,6 +390,11 @@
     max-width: 390px;
     margin-bottom: 30px;
   }
+  .index_top .overlay .overlay_cnt .carpet_installation {
+    font-size: 13px;
+    max-width: 390px;
+    margin-bottom: 30px;
+  }
   .index_top .overlay .overlay_cnt .overlay_cnt_links {
     max-width: 360px;
   }
@@ -612,7 +628,7 @@
 }
 @media all and (max-width: 419px) {
   .index_top {
-    height: 490px;
+    height: 590px;
   }
   .index_top .overlay .overlay_cnt {
     padding: 0;
@@ -633,6 +649,12 @@
     display: grid;
     grid-template-columns: repeat(1, auto);
     font-size: 13px;
+  }
+  .index_top .overlay .overlay_cnt .carpet_installation {
+    font-size: 13px;
+    max-width: 290px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .index_top .overlay .overlay_cnt .overlay_cnt_links {
     max-width: 360px;
@@ -750,10 +772,10 @@
   }
   .index_contact {
     margin-top: 0px;
-    height: 370px;
+    height: 410px;
   }
   .index_contact .overlay .overlay_cnt {
-    padding-top: 10px;
+    padding-top: 0px;
   }
   .index_contact .overlay .overlay_cnt h1 {
     font-size: 30px;
@@ -776,7 +798,7 @@
 }
 @media only screen and (min-device-width: 411px) and (max-device-width: 823px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .index_top {
-    height: 360px;
+    height: 420px;
   }
   .index_top .overlay .overlay_cnt {
     padding-top: 15px;
@@ -803,6 +825,12 @@
     font-size: 13px;
     max-width: 390px;
     margin-bottom: 30px;
+  }
+  .index_top .overlay .overlay_cnt .carpet_installation {
+    font-size: 13px;
+    max-width: 370px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .index_top .overlay .overlay_cnt .overlay_cnt_links {
     max-width: 320px;
@@ -923,7 +951,7 @@
   }
   .index_contact {
     margin-top: 0px;
-    height: 270px;
+    height: 310px;
   }
   .index_contact .overlay .overlay_cnt {
     padding-top: 10px;
@@ -1093,7 +1121,7 @@
   }
   .index_contact .overlay .overlay_cnt p {
     font-size: 17px;
-    max-width: 520px;
+    max-width: 590px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;
@@ -1108,7 +1136,7 @@
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
   .index_top {
-    height: 360px;
+    height: 450px;
   }
   .index_top .overlay .overlay_cnt {
     padding-top: 0px;
@@ -1128,6 +1156,11 @@
     margin-right: auto;
     margin-top: 10px;
     margin-bottom: 30px;
+  }
+  .index_top .overlay .overlay_cnt .carpet_installation {
+    max-width: 340px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .index_top .overlay .overlay_cnt .overlay_cnt_links {
     max-width: 290px;
@@ -1272,7 +1305,7 @@
 }
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .index_top {
-    height: 590px;
+    height: 640px;
   }
   .index_top .overlay .overlay_cnt {
     padding-top: 0px;
@@ -1321,7 +1354,7 @@
   .index_services .index_services_inner .index_services_inner_box .index_services_inner_row .index_services_inner_side {
     max-width: 100%;
     width: 100%;
-    height: 795px;
+    height: 895px;
   }
   .index_services .index_services_inner .index_services_inner_box .index_services_inner_row .index_services_L {
     max-width: 40%;
@@ -1368,7 +1401,7 @@
   .index_about .index_about_inner .index_about_inner_box .index_about_inner_row .index_about_inner_side {
     max-width: 100%;
     width: 100%;
-    height: 525px;
+    height: 695px;
   }
   .index_about .index_about_inner .index_about_inner_box .index_about_inner_row .index_about_R {
     max-width: 40%;
@@ -1422,7 +1455,7 @@
   }
   .index_contact .overlay .overlay_cnt p {
     font-size: 17px;
-    max-width: 540px;
+    max-width: 580px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
@@ -1460,6 +1493,9 @@
   }
   .index_top .overlay .overlay_cnt ul {
     grid-template-columns: repeat(2, auto);
+  }
+  .index_top .overlay .overlay_cnt .carpet_installation {
+    max-width: 500px;
   }
   .index_top .overlay .overlay_cnt .overlay_cnt_links {
     max-width: 360px;
@@ -1532,7 +1568,7 @@
   .index_about .index_about_inner .index_about_inner_box .index_about_inner_row .index_about_inner_side {
     max-width: 100%;
     width: 100%;
-    height: 455px;
+    height: 625px;
   }
   .index_about .index_about_inner .index_about_inner_box .index_about_inner_row .index_about_R {
     max-width: 40%;
@@ -1586,7 +1622,7 @@
   }
   .index_contact .overlay .overlay_cnt p {
     font-size: 17px;
-    max-width: 540px;
+    max-width: 580px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
@@ -1601,7 +1637,7 @@
 }
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
   .index_top {
-    height: 590px;
+    height: 650px;
   }
   .index_top .overlay .overlay_cnt {
     padding-top: 0px;
@@ -1612,7 +1648,7 @@
     line-height: 70px;
   }
   .index_top .overlay .overlay_cnt h1 br {
-    display: none;
+    display: block;
   }
   .index_top .overlay .overlay_cnt p {
     font-size: 22px;
@@ -1646,7 +1682,7 @@
   .index_services .index_services_inner .index_services_inner_box .index_services_inner_row .index_services_inner_side {
     max-width: 100%;
     width: 100%;
-    height: 795px;
+    height: 865px;
   }
   .index_services .index_services_inner .index_services_inner_box .index_services_inner_row .index_services_L {
     max-width: 40%;

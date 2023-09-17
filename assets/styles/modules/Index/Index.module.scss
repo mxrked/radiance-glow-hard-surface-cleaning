@@ -56,6 +56,7 @@
 
     .overlay_cnt {
       padding-bottom: 70px;
+      white-space: pre-wrap;
 
       h1 {
         font-family: "Open Sans Extra Bold";
@@ -120,6 +121,16 @@
           }
         }
       }
+
+      .carpet_installation {
+        font-family: "Open Sans Bold";
+        font-size: $Link;
+        color: white;
+        margin-bottom: 30px;
+        display: block;
+        max-width: 500px;
+        @include quickCenter("relative");
+      }
     }
   }
 }
@@ -131,7 +142,7 @@
     .index_services_inner_box {
       .index_services_inner_row {
         .index_services_inner_side {
-          height: 920px;
+          height: 1000px;
           display: flex;
           align-items: center;
           padding: 0;
@@ -442,6 +453,12 @@
         ul {
           display: grid;
           grid-template-columns: repeat(2, auto);
+          font-size: clamp(13px, 13px, 13px);
+          max-width: 390px;
+          margin-bottom: 30px;
+        }
+
+        .carpet_installation {
           font-size: clamp(13px, 13px, 13px);
           max-width: 390px;
           margin-bottom: 30px;
@@ -760,7 +777,7 @@
 // Smaller Devices (Phones)
 @media all and (max-width: 419px) {
   .index_top {
-    height: 490px;
+    height: 590px;
 
     .overlay {
       .overlay_cnt {
@@ -783,6 +800,12 @@
           display: grid;
           grid-template-columns: repeat(1, auto);
           font-size: clamp(13px, 13px, 13px);
+        }
+
+        .carpet_installation {
+          font-size: clamp(13px, 13px, 13px);
+          max-width: 290px;
+          @include quickCenter("relative");
         }
 
         .overlay_cnt_links {
@@ -929,11 +952,11 @@
   }
   .index_contact {
     margin-top: 0px;
-    height: 370px;
+    height: 410px;
 
     .overlay {
       .overlay_cnt {
-        padding-top: 10px;
+        padding-top: 0px;
 
         h1 {
           font-size: clamp(30px, 30px, 30px);
@@ -961,7 +984,7 @@
 // Pixel 2 XL
 @media only screen and (min-device-width: 411px) and (max-device-width: 823px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .index_top {
-    height: 360px;
+    height: 420px;
 
     .overlay {
       .overlay_cnt {
@@ -991,6 +1014,12 @@
           font-size: clamp(13px, 13px, 13px);
           max-width: 390px;
           margin-bottom: 30px;
+        }
+
+        .carpet_installation {
+          font-size: clamp(13px, 13px, 13px);
+          max-width: 370px;
+          @include quickCenter("relative");
         }
 
         .overlay_cnt_links {
@@ -1140,7 +1169,7 @@
   }
   .index_contact {
     margin-top: 0px;
-    height: 270px;
+    height: 310px;
 
     .overlay {
       .overlay_cnt {
@@ -1348,7 +1377,7 @@
 
         p {
           font-size: clamp(17px, 17px, 17px);
-          max-width: 520px;
+          max-width: 590px;
           @include quickCenter("relative");
           margin-bottom: 40px;
         }
@@ -1366,7 +1395,7 @@
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
   .index_top {
-    height: 360px;
+    height: 450px;
 
     .overlay {
       .overlay_cnt {
@@ -1388,6 +1417,11 @@
           @include quickCenter("relative");
           margin-top: 10px;
           margin-bottom: 30px;
+        }
+
+        .carpet_installation {
+          max-width: 340px;
+          @include quickCenter("relative");
         }
 
         .overlay_cnt_links {
@@ -1569,7 +1603,7 @@
 // iPad Pro
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .index_top {
-    height: 590px;
+    height: 640px;
 
     .overlay {
       .overlay_cnt {
@@ -1595,6 +1629,212 @@
 
         ul {
           grid-template-columns: repeat(2, auto);
+          max-width: 500px;
+        }
+
+        .overlay_cnt_links {
+          max-width: 360px;
+          display: flex;
+          text-align: center;
+
+          a {
+            font-size: clamp(16px, 16px, 16px);
+            @include quickCenter("relative");
+            height: 50px;
+          }
+
+          .about_link {
+            max-width: 140px;
+            margin-bottom: 0px;
+          }
+
+          .contact_link {
+            max-width: 150px;
+          }
+        }
+      }
+    }
+  }
+  .index_services {
+    margin-top: 0px;
+
+    .index_services_inner {
+      .index_services_inner_box {
+        .index_services_inner_row {
+          .index_services_inner_side {
+            max-width: 100%;
+            width: 100%;
+            height: 895px;
+          }
+
+          .index_services_L {
+            // height: 230px;
+            max-width: 40%;
+
+            .index_services_inner_side_cnt {
+              padding-left: 0px;
+              padding-right: 0px;
+              max-width: 500px;
+              height: 100%;
+              @include quickCenter("relative");
+            }
+          }
+
+          .index_services_R {
+            max-width: 60%;
+            padding-top: 70px;
+            padding-bottom: 70px;
+
+            .index_services_inner_side_cnt {
+              max-width: 500px;
+              padding-left: 35px;
+              padding-right: 35px;
+
+              h1 {
+                font-size: clamp(40px, 40px, 40px);
+                line-height: 45px;
+              }
+
+              p {
+                font-size: clamp(17px, 17px, 17px);
+                max-width: 440px;
+                @include quickCenter("relative");
+                margin-bottom: 30px;
+              }
+
+              a {
+                font-size: clamp(16px, 16px, 16px);
+                @include quickCenter("relative");
+                height: 50px;
+                max-width: 150px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .index_about {
+    margin-top: 0px;
+
+    .index_about_inner {
+      .index_about_inner_box {
+        .index_about_inner_row {
+          .index_about_inner_side {
+            max-width: 100%;
+            width: 100%;
+            height: 695px;
+          }
+
+          .index_about_R {
+            // height: 230px;
+            max-width: 40%;
+
+            .index_about_inner_side_cnt {
+              padding-left: 0px;
+              padding-right: 0px;
+              max-width: 500px;
+              height: 100%;
+              @include quickCenter("relative");
+            }
+          }
+
+          .index_about_L {
+            max-width: 60%;
+            padding-top: 70px;
+            padding-bottom: 70px;
+
+            .index_about_inner_side_cnt {
+              max-width: 500px;
+              padding-left: 35px;
+              padding-right: 35px;
+
+              h1 {
+                font-size: clamp(40px, 40px, 40px);
+                line-height: 45px;
+              }
+
+              p {
+                font-size: clamp(17px, 17px, 17px);
+                max-width: 440px;
+                @include quickCenter("relative");
+                margin-bottom: 30px;
+              }
+
+              a {
+                font-size: clamp(16px, 16px, 16px);
+                @include quickCenter("relative");
+                height: 50px;
+                max-width: 150px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .index_contact {
+    margin-top: 0px;
+    height: 420px;
+
+    .overlay {
+      .overlay_cnt {
+        padding-top: 10px;
+
+        h1 {
+          font-size: clamp(40px, 40px, 40px);
+          line-height: 45px;
+        }
+
+        p {
+          font-size: clamp(17px, 17px, 17px);
+          max-width: 580px;
+          @include quickCenter("relative");
+          margin-bottom: 30px;
+        }
+
+        a {
+          font-size: clamp(16px, 16px, 16px);
+          @include quickCenter("relative");
+          height: 50px;
+          max-width: 140px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .index_top {
+    height: 590px;
+
+    .overlay {
+      .overlay_cnt {
+        padding-top: 0px;
+        padding-bottom: 0px;
+
+        h1 {
+          font-size: 55px;
+          line-height: 60px;
+
+          br {
+            display: block;
+          }
+        }
+
+        p {
+          font-size: clamp(18px, 20px, 20px);
+          max-width: 860px;
+          @include quickCenter("relative");
+          margin-top: 20px;
+          margin-bottom: 30px;
+        }
+
+        ul {
+          grid-template-columns: repeat(2, auto);
+        }
+
+        .carpet_installation {
           max-width: 500px;
         }
 
@@ -1689,209 +1929,7 @@
           .index_about_inner_side {
             max-width: 100%;
             width: 100%;
-            height: 525px;
-          }
-
-          .index_about_R {
-            // height: 230px;
-            max-width: 40%;
-
-            .index_about_inner_side_cnt {
-              padding-left: 0px;
-              padding-right: 0px;
-              max-width: 500px;
-              height: 100%;
-              @include quickCenter("relative");
-            }
-          }
-
-          .index_about_L {
-            max-width: 60%;
-            padding-top: 70px;
-            padding-bottom: 70px;
-
-            .index_about_inner_side_cnt {
-              max-width: 500px;
-              padding-left: 35px;
-              padding-right: 35px;
-
-              h1 {
-                font-size: clamp(40px, 40px, 40px);
-                line-height: 45px;
-              }
-
-              p {
-                font-size: clamp(17px, 17px, 17px);
-                max-width: 440px;
-                @include quickCenter("relative");
-                margin-bottom: 30px;
-              }
-
-              a {
-                font-size: clamp(16px, 16px, 16px);
-                @include quickCenter("relative");
-                height: 50px;
-                max-width: 150px;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  .index_contact {
-    margin-top: 0px;
-    height: 420px;
-
-    .overlay {
-      .overlay_cnt {
-        padding-top: 10px;
-
-        h1 {
-          font-size: clamp(40px, 40px, 40px);
-          line-height: 45px;
-        }
-
-        p {
-          font-size: clamp(17px, 17px, 17px);
-          max-width: 540px;
-          @include quickCenter("relative");
-          margin-bottom: 30px;
-        }
-
-        a {
-          font-size: clamp(16px, 16px, 16px);
-          @include quickCenter("relative");
-          height: 50px;
-          max-width: 140px;
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  .index_top {
-    height: 590px;
-
-    .overlay {
-      .overlay_cnt {
-        padding-top: 0px;
-        padding-bottom: 0px;
-
-        h1 {
-          font-size: 55px;
-          line-height: 60px;
-
-          br {
-            display: block;
-          }
-        }
-
-        p {
-          font-size: clamp(18px, 20px, 20px);
-          max-width: 860px;
-          @include quickCenter("relative");
-          margin-top: 20px;
-          margin-bottom: 30px;
-        }
-
-        ul {
-          grid-template-columns: repeat(2, auto);
-        }
-
-        .overlay_cnt_links {
-          max-width: 360px;
-          display: flex;
-          text-align: center;
-
-          a {
-            font-size: clamp(16px, 16px, 16px);
-            @include quickCenter("relative");
-            height: 50px;
-          }
-
-          .about_link {
-            max-width: 140px;
-            margin-bottom: 0px;
-          }
-
-          .contact_link {
-            max-width: 150px;
-          }
-        }
-      }
-    }
-  }
-  .index_services {
-    margin-top: 0px;
-
-    .index_services_inner {
-      .index_services_inner_box {
-        .index_services_inner_row {
-          .index_services_inner_side {
-            max-width: 100%;
-            width: 100%;
-            height: 795px;
-          }
-
-          .index_services_L {
-            // height: 230px;
-            max-width: 40%;
-
-            .index_services_inner_side_cnt {
-              padding-left: 0px;
-              padding-right: 0px;
-              max-width: 500px;
-              height: 100%;
-              @include quickCenter("relative");
-            }
-          }
-
-          .index_services_R {
-            max-width: 60%;
-            padding-top: 70px;
-            padding-bottom: 70px;
-
-            .index_services_inner_side_cnt {
-              max-width: 500px;
-              padding-left: 35px;
-              padding-right: 35px;
-
-              h1 {
-                font-size: clamp(40px, 40px, 40px);
-                line-height: 45px;
-              }
-
-              p {
-                font-size: clamp(17px, 17px, 17px);
-                max-width: 440px;
-                @include quickCenter("relative");
-                margin-bottom: 30px;
-              }
-
-              a {
-                font-size: clamp(16px, 16px, 16px);
-                @include quickCenter("relative");
-                height: 50px;
-                max-width: 150px;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  .index_about {
-    margin-top: 0px;
-
-    .index_about_inner {
-      .index_about_inner_box {
-        .index_about_inner_row {
-          .index_about_inner_side {
-            max-width: 100%;
-            width: 100%;
-            height: 455px;
+            height: 625px;
           }
 
           .index_about_R {
@@ -1956,7 +1994,7 @@
 
         p {
           font-size: clamp(17px, 17px, 17px);
-          max-width: 540px;
+          max-width: 580px;
           @include quickCenter("relative");
           margin-bottom: 30px;
         }
@@ -1975,7 +2013,7 @@
 // Laptops
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
   .index_top {
-    height: 590px;
+    height: 650px;
 
     .overlay {
       .overlay_cnt {
@@ -1987,7 +2025,7 @@
           line-height: 70px;
 
           br {
-            display: none;
+            display: block;
           }
         }
 
@@ -2031,7 +2069,7 @@
           .index_services_inner_side {
             max-width: 100%;
             width: 100%;
-            height: 795px;
+            height: 865px;
           }
 
           .index_services_L {
