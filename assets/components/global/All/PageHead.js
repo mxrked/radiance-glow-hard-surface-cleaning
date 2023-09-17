@@ -37,7 +37,8 @@ export const PageHead = () => {
 
   // Index Page
   if (router.pathname == "/") {
-    title = "Radiance Glow HSC - Home";
+    title =
+      "Radiance Glow HSC - Pressure Washing, Carpet Cleaning, Upholstery for North Carolina";
     robots = "index, follow";
     url = router.pathname;
 
