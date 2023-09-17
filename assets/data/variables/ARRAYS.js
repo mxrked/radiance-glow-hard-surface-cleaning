@@ -3,6 +3,7 @@
 import { REVIEW_1, REVIEW_2, REVIEW_3, REVIEW_4 } from "./OBJECTS";
 
 const INDEX_KWS = [
+  "carpet installation high point nc",
   "radiance glow hsc",
   "radiance glow hard surface cleaning",
   "radiance glow",
@@ -12,21 +13,47 @@ const INDEX_KWS = [
   "nc tile and grout",
   "nc carpet cleaning",
   "nc upholstery cleaning",
+  "hard surface cleaner reviews",
+  "carpet cleaning service winston salem nc",
+  "maid in nc high point nc",
+  "how to get pet urine out of microfiber couch",
+  "glow point",
+  "glow grout",
+  "glow professional home cleaning services",
+  "hard surface floor cleaning services",
 ];
 const ABOUT_KWS = [
+  "carpet installation high point nc",
   "about radiance glow hsc",
   "about radiance glow hard surface cleaning",
   "about chip holden",
   "about radiance glow",
   "radiance glow hsc background",
   "radiance glow hsc reviews",
+  "hard surface cleaner reviews",
+  "carpet cleaning service winston salem nc",
+  "maid in nc high point nc",
+  "how to get pet urine out of microfiber couch",
+  "glow point",
+  "glow grout",
+  "glow professional home cleaning services",
+  "hard surface floor cleaning services",
 ];
 const CONTACT_KWS = [
+  "carpet installation high point nc",
   "contact radiance glow hsc",
   "contact radiance glow hard surface cleaning",
   "book a service",
   "book an appointment",
   "contact chip holden",
+  "hard surface cleaner reviews",
+  "carpet cleaning service winston salem nc",
+  "maid in nc high point nc",
+  "how to get pet urine out of microfiber couch",
+  "glow point",
+  "glow grout",
+  "glow professional home cleaning services",
+  "hard surface floor cleaning services",
 ];
 
 const REVIEWS = [REVIEW_1, REVIEW_2, REVIEW_3, REVIEW_4];
