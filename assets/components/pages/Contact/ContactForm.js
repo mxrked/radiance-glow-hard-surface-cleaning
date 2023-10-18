@@ -129,9 +129,20 @@ export const ContactForm = () => {
                   <select
                     id="emailService"
                     className="orientation-change-element half-second"
+                    onChange={(e) => {
+                      if (e.currentTarget.value == "contact-support") {
+                        document.getElementById(
+                          "typeOfLocationRow"
+                        ).style.display = "none";
+                      } else {
+                        document.getElementById(
+                          "typeOfLocationRow"
+                        ).style.display = "flex";
+                      }
+                    }}
                   >
                     <option selected={true}>-- NOT SELECTED --</option>
-                    <option>Contact/Support</option>
+                    <option value="contact-support">Contact/Support</option>
                     <option>Pressure Washing</option>
                     <option>Tile & Grout Cleaning</option>
                     <option>Carpet Cleaning</option>
@@ -140,7 +151,10 @@ export const ContactForm = () => {
                 </div>
               </div>
             </div>
-            <div className={`${styles.form_row} ${styles.row_5} row`}>
+            <div
+              id="typeOfLocationRow"
+              className={`${styles.form_row} ${styles.row_5} row`}
+            >
               <div
                 className={`${styles.form_side} col-lg-12 col-md-12 col-sm-12 col-xs-12`}
               >
@@ -187,6 +201,10 @@ export const ContactForm = () => {
             <button
               type={"reset"}
               className={`${styles.clear} orientation-change-element half-second`}
+              onClick={() => {
+                document.getElementById("typeOfLocationRow").style.display =
+                  "flex";
+              }}
             >
               <span>CLEAR INPUTS</span>
             </button>
