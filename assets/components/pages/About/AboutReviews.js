@@ -4,7 +4,8 @@
  *
  */
 
-import { BackgroundImage } from "react-image-and-background-image-fade";
+// import { BackgroundImage } from "react-image-and-background-image-fade";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 import { REVIEWS } from "@/assets/data/variables/ARRAYS";
 
@@ -51,7 +52,16 @@ export const AboutReviews = () => {
                           <div
                             className={`${styles.bg_holder} orientation-change-element half-second`}
                           >
+                            {/**
                             <BackgroundImage
+                              width="100%"
+                              height="100%"
+                              src={review.getReviewPfp}
+                              className={`${styles.bg}`}
+                            />
+                            */}
+
+                            <LazyLoadImage
                               width="100%"
                               height="100%"
                               src={review.getReviewPfp}

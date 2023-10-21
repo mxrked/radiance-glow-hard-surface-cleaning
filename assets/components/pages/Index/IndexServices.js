@@ -4,7 +4,8 @@
  *
  */
 
-import { BackgroundImage } from "react-image-and-background-image-fade";
+// import { BackgroundImage } from "react-image-and-background-image-fade";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 import {
   INDEX_PRESSURE_WASHING_BG,
@@ -27,7 +28,16 @@ export const IndexServices = () => {
               className={`${styles.index_services_inner_side} ${styles.index_services_L} col-lg-5 col-md-5 col-sm-5 col-xs-5`}
             >
               <div className={`${styles.index_services_inner_side_cnt}`}>
+                {/**
                 <BackgroundImage
+                  src={INDEX_MEXICAN_TILES_BG}
+                  className={`${styles.bg}`}
+                  width="100%"
+                  height="100%"
+                />
+                */}
+
+                <LazyLoadImage
                   src={INDEX_MEXICAN_TILES_BG}
                   className={`${styles.bg}`}
                   width="100%"

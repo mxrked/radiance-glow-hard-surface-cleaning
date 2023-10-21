@@ -4,7 +4,8 @@
  *
  */
 
-import { BackgroundImage } from "react-image-and-background-image-fade";
+// import { BackgroundImage } from "react-image-and-background-image-fade";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 import { CONTACT_TOP_BG } from "@/assets/cdns/CDNBgs";
 
@@ -16,7 +17,16 @@ export const IndexContact = () => {
       id="indexContact"
       className={`${styles.index_contact} overrides_IndexContact fm-motion`}
     >
+      {/**
       <BackgroundImage
+        src={CONTACT_TOP_BG}
+        width="100%"
+        height="100%"
+        className={`${styles.bg}`}
+      />
+      */}
+
+      <LazyLoadImage
         src={CONTACT_TOP_BG}
         width="100%"
         height="100%"

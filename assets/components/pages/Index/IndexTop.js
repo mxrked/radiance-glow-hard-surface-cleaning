@@ -4,7 +4,8 @@
  *
  */
 
-import { BackgroundImage } from "react-image-and-background-image-fade";
+// import { BackgroundImage } from "react-image-and-background-image-fade";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 import { INDEX_TOP_BG } from "@/assets/cdns/CDNBgs";
 
@@ -16,7 +17,16 @@ export const IndexTop = () => {
       id="indexTop"
       className={`${styles.index_top} overrides_IndexTop fm-motion`}
     >
+      {/**
       <BackgroundImage
+        src={INDEX_TOP_BG}
+        width="100%"
+        height="100%"
+        className={`${styles.bg}`}
+      />
+      */}
+
+      <LazyLoadImage
         src={INDEX_TOP_BG}
         width="100%"
         height="100%"

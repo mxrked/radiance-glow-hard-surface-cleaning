@@ -5,7 +5,8 @@
  */
 import { useEffect } from "react";
 
-import { BackgroundImage } from "react-image-and-background-image-fade";
+// import { BackgroundImage } from "react-image-and-background-image-fade";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 import {
   INDEX_UPHOLSTERY_CLEANING_BG,
@@ -105,7 +106,16 @@ export const IndexAbout = () => {
               className={`${styles.index_about_inner_side} ${styles.index_about_R} col-lg-5 col-md-5 col-sm-5 col-xs-5 order-lg-1 order-md-1 order-sm-0 order-0`}
             >
               <div className={`${styles.index_about_inner_side_cnt}`}>
+                {/**
                 <BackgroundImage
+                  src={INDEX_UPHOLSTERY_CLEANING_REPLACEMENT_BG}
+                  className={`${styles.bg}`}
+                  width="100%"
+                  height="100%"
+                />
+                */}
+
+                <LazyLoadImage
                   src={INDEX_UPHOLSTERY_CLEANING_REPLACEMENT_BG}
                   className={`${styles.bg}`}
                   width="100%"

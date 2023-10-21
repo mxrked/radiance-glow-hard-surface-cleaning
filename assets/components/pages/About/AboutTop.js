@@ -4,7 +4,8 @@
  *
  */
 
-import { BackgroundImage } from "react-image-and-background-image-fade";
+// import { BackgroundImage } from "react-image-and-background-image-fade";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 import { ABOUT_TOP_BG, INDEX_MEXICAN_TILES_BG } from "@/assets/cdns/CDNBgs";
 
@@ -16,7 +17,16 @@ export const AboutTop = () => {
       id="aboutTop"
       className={`${styles.about_top} overrides_AboutTop fm-motion`}
     >
+      {/**
       <BackgroundImage
+        src={INDEX_MEXICAN_TILES_BG}
+        width="100%"
+        height="100%"
+        className={`${styles.bg}`}
+      />
+      */}
+
+      <LazyLoadImage
         src={INDEX_MEXICAN_TILES_BG}
         width="100%"
         height="100%"
