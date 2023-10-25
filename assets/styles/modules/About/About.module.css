@@ -293,6 +293,7 @@
   .about_reviews .about_reviews_inner .about_reviews_inner_reviews {
     max-width: 1000px;
     padding-left: 0px;
+    padding-right: 0px;
   }
   .about_reviews .about_reviews_inner .about_reviews_inner_reviews .about_reviews_inner_reviews_box .about_reviews_inner_reviews_row .review .review_box .review_row .review_side {
     height: 325px;
