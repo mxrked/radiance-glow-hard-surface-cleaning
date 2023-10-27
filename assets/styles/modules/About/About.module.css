@@ -139,6 +139,65 @@
   white-space: pre-wrap;
 }
 
+.about_backlinks {
+  margin-top: 230px;
+  margin-bottom: 235px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.about_backlinks .about_backlinks_inner {
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about_backlinks .about_backlinks_inner h1 {
+  font-family: "Open Sans Extra Bold";
+  font-size: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+  color: #004481;
+  white-space: pre-wrap;
+  line-height: 80px;
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about_backlinks .about_backlinks_inner h1 br {
+  display: none;
+}
+.about_backlinks .about_backlinks_inner ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 630px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about_backlinks .about_backlinks_inner ul li img {
+  max-width: 230px;
+}
+.about_backlinks .about_backlinks_inner .contact_link {
+  width: 100%;
+  height: 50px;
+  font-size: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans Semi Bold";
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  background-color: #004481;
+  max-width: 160px;
+}
+.about_backlinks .about_backlinks_inner .contact_link:hover {
+  background-color: #0da0da;
+}
+
 .about_reviews {
   padding-left: 60px;
   padding-right: 60px;
@@ -282,6 +341,20 @@
     max-width: 950px;
     margin-bottom: 20px;
   }
+  .about_backlinks {
+    margin-top: 160px;
+    margin-bottom: 185px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .about_backlinks .about_backlinks_inner h1 {
+    font-size: 53px;
+    line-height: 60px;
+    margin-bottom: 30px;
+  }
+  .about_backlinks .about_backlinks_inner h1 br {
+    display: none;
+  }
   .about_reviews .about_reviews_inner h1 {
     font-size: 53px;
     line-height: 60px;
@@ -337,6 +410,20 @@
   .about_text .about_text_inner p {
     font-size: 19px;
     max-width: 620px;
+  }
+  .about_backlinks {
+    margin-top: 160px;
+    margin-bottom: 185px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .about_backlinks .about_backlinks_inner h1 {
+    font-size: clamp(2.5rem, 3vw, 3rem);
+    line-height: 55px;
+    margin-bottom: 30px;
+  }
+  .about_backlinks .about_backlinks_inner h1 br {
+    display: none;
   }
   .about_reviews {
     margin-bottom: 60px;
@@ -408,6 +495,37 @@
   .about_text .about_text_inner p {
     font-size: 17px;
     max-width: 540px;
+  }
+  .about_backlinks {
+    margin-top: 100px;
+    margin-bottom: 105px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .about_backlinks .about_backlinks_inner {
+    text-align: center;
+  }
+  .about_backlinks .about_backlinks_inner h1 {
+    font-size: clamp(2rem, 3vw, 3rem);
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+  .about_backlinks .about_backlinks_inner h1 br {
+    display: block;
+  }
+  .about_backlinks .about_backlinks_inner ul {
+    display: block;
+    text-align: center;
+  }
+  .about_backlinks .about_backlinks_inner ul li img {
+    max-width: 180px;
+  }
+  .about_backlinks .about_backlinks_inner .contact_link {
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 45px;
+    max-width: 130px;
   }
   .about_reviews {
     padding-left: 20px;
@@ -496,6 +614,39 @@
     font-size: 14px;
     max-width: 285px;
     margin-bottom: 20px;
+  }
+  .about_backlinks {
+    margin-top: 80px;
+    margin-bottom: 75px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .about_backlinks .about_backlinks_inner {
+    text-align: center;
+  }
+  .about_backlinks .about_backlinks_inner h1 {
+    font-size: 24px;
+    line-height: 25px;
+    margin-bottom: 30px;
+  }
+  .about_backlinks .about_backlinks_inner h1 br {
+    display: block;
+  }
+  .about_backlinks .about_backlinks_inner ul {
+    display: block;
+    text-align: center;
+  }
+  .about_backlinks .about_backlinks_inner ul li img {
+    max-width: 160px;
+  }
+  .about_backlinks .about_backlinks_inner .contact_link {
+    font-size: 13px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    height: 40px;
+    max-width: 120px;
   }
   .about_reviews {
     padding-left: 10px;
@@ -592,6 +743,40 @@
     max-width: 460px;
     margin-bottom: 20px;
   }
+  .about_backlinks {
+    margin-top: 80px;
+    margin-bottom: 65px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .about_backlinks .about_backlinks_inner {
+    text-align: center;
+  }
+  .about_backlinks .about_backlinks_inner h1 {
+    font-size: 31px;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+  .about_backlinks .about_backlinks_inner h1 br {
+    display: none;
+  }
+  .about_backlinks .about_backlinks_inner ul {
+    display: flex;
+    text-align: center;
+    max-width: 650px;
+  }
+  .about_backlinks .about_backlinks_inner ul li img {
+    max-width: 160px;
+  }
+  .about_backlinks .about_backlinks_inner .contact_link {
+    font-size: 13px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    height: 40px;
+    max-width: 120px;
+  }
   .about_reviews {
     padding-left: 5px;
     padding-right: 5px;
@@ -677,7 +862,7 @@
     padding-right: 20px;
   }
   .about_text .about_text_inner h1 {
-    font-size: 36px;
+    font-size: 31px;
     line-height: 40px;
     margin-bottom: 30px;
   }
@@ -688,6 +873,40 @@
     font-size: 17px;
     max-width: 520px;
     margin-bottom: 20px;
+  }
+  .about_backlinks {
+    margin-top: 130px;
+    margin-bottom: 135px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .about_backlinks .about_backlinks_inner {
+    text-align: center;
+  }
+  .about_backlinks .about_backlinks_inner h1 {
+    font-size: 31px;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+  .about_backlinks .about_backlinks_inner h1 br {
+    display: none;
+  }
+  .about_backlinks .about_backlinks_inner ul {
+    display: flex;
+    text-align: center;
+    max-width: 690px;
+  }
+  .about_backlinks .about_backlinks_inner ul li img {
+    max-width: 190px;
+  }
+  .about_backlinks .about_backlinks_inner .contact_link {
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    max-width: 150px;
+    margin-top: 25px;
+    margin-bottom: 15px;
   }
   .about_reviews {
     padding-left: 10px;
@@ -770,7 +989,7 @@
     padding-right: 20px;
   }
   .about_text .about_text_inner h1 {
-    font-size: 36px;
+    font-size: 31px;
     line-height: 40px;
     margin-bottom: 30px;
   }
@@ -781,6 +1000,40 @@
     font-size: 15px;
     max-width: 590px;
     margin-bottom: 20px;
+  }
+  .about_backlinks {
+    margin-top: 100px;
+    margin-bottom: 85px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .about_backlinks .about_backlinks_inner {
+    text-align: center;
+  }
+  .about_backlinks .about_backlinks_inner h1 {
+    font-size: 31px;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+  .about_backlinks .about_backlinks_inner h1 br {
+    display: none;
+  }
+  .about_backlinks .about_backlinks_inner ul {
+    display: flex;
+    text-align: center;
+    max-width: 650px;
+  }
+  .about_backlinks .about_backlinks_inner ul li img {
+    max-width: 160px;
+  }
+  .about_backlinks .about_backlinks_inner .contact_link {
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    max-width: 135px;
+    margin-top: 25px;
+    margin-bottom: 15px;
   }
   .about_reviews {
     padding-left: 5px;
@@ -880,6 +1133,40 @@
     max-width: 640px;
     margin-bottom: 20px;
   }
+  .about_backlinks {
+    margin-top: 200px;
+    margin-bottom: 185px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .about_backlinks .about_backlinks_inner {
+    text-align: center;
+  }
+  .about_backlinks .about_backlinks_inner h1 {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 30px;
+  }
+  .about_backlinks .about_backlinks_inner h1 br {
+    display: none;
+  }
+  .about_backlinks .about_backlinks_inner ul {
+    display: flex;
+    text-align: center;
+    max-width: 650px;
+  }
+  .about_backlinks .about_backlinks_inner ul li img {
+    max-width: 235px;
+  }
+  .about_backlinks .about_backlinks_inner .contact_link {
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    max-width: 150px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
   .about_reviews {
     padding-left: 5px;
     padding-right: 5px;
@@ -978,6 +1265,40 @@
     max-width: 640px;
     margin-bottom: 20px;
   }
+  .about_backlinks {
+    margin-top: 150px;
+    margin-bottom: 135px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .about_backlinks .about_backlinks_inner {
+    text-align: center;
+  }
+  .about_backlinks .about_backlinks_inner h1 {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 30px;
+  }
+  .about_backlinks .about_backlinks_inner h1 br {
+    display: none;
+  }
+  .about_backlinks .about_backlinks_inner ul {
+    display: flex;
+    text-align: center;
+    max-width: 650px;
+  }
+  .about_backlinks .about_backlinks_inner ul li img {
+    max-width: 235px;
+  }
+  .about_backlinks .about_backlinks_inner .contact_link {
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    max-width: 150px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
   .about_reviews {
     padding-left: 5px;
     padding-right: 5px;
@@ -1075,6 +1396,40 @@
     font-size: 19px;
     max-width: 850px;
     margin-bottom: 20px;
+  }
+  .about_backlinks {
+    margin-top: 200px;
+    margin-bottom: 185px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .about_backlinks .about_backlinks_inner {
+    text-align: center;
+  }
+  .about_backlinks .about_backlinks_inner h1 {
+    font-size: 53px;
+    line-height: 60px;
+    margin-bottom: 30px;
+  }
+  .about_backlinks .about_backlinks_inner h1 br {
+    display: none;
+  }
+  .about_backlinks .about_backlinks_inner ul {
+    display: flex;
+    text-align: center;
+    max-width: 650px;
+  }
+  .about_backlinks .about_backlinks_inner ul li img {
+    max-width: 235px;
+  }
+  .about_backlinks .about_backlinks_inner .contact_link {
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 55px;
+    max-width: 160px;
+    margin-top: 25px;
+    margin-bottom: 15px;
   }
   .about_reviews {
     padding-left: 5px;
