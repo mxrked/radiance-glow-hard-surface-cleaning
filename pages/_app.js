@@ -204,9 +204,20 @@ export default function App({ Component, pageProps }) {
       "img",
       "br",
     ];
+    const ELEMENT_CLASSNAMES = ["lazyload-image"];
 
     ELEMENT_TYPES.forEach((eT) => {
       const ELEMENTS = document.getElementsByTagName(eT);
+
+      for (let i = 0; i < ELEMENTS.length; i++) {
+        if (!ELEMENTS[i].classList.contains("selected")) {
+          ELEMENTS[i].classList.add("selected");
+        }
+      }
+    });
+
+    ELEMENT_CLASSNAMES.forEach((eCN) => {
+      const ELEMENTS = document.getElementsByClassName(eCN);
 
       for (let i = 0; i < ELEMENTS.length; i++) {
         if (!ELEMENTS[i].classList.contains("selected")) {
