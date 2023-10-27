@@ -17,6 +17,7 @@ import { Footer } from "@/assets/components/global/Footer/Footer";
 import { AboutTop } from "@/assets/components/pages/About/AboutTop";
 import { AboutVideo } from "@/assets/components/pages/About/AboutVideo";
 import { AboutText } from "@/assets/components/pages/About/AboutText";
+import { AboutBacklinks } from "@/assets/components/pages/About/AboutBacklinks";
 import { AboutReviews } from "@/assets/components/pages/About/AboutReviews";
 
 // Style Imports
@@ -43,6 +44,7 @@ export default function About() {
         <AboutTop />
         <AboutVideo />
         <AboutText />
+        <AboutBacklinks />
         <AboutReviews />
         {/**  */}
 
