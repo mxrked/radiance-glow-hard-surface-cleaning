@@ -120,6 +120,7 @@ export const IndexAbout = () => {
                   className={`${styles.bg}`}
                   width="100%"
                   height="100%"
+                  alt="Image of vaccuumed carpet. Example of carpet cleaning."
                 />
               </div>
             </div>

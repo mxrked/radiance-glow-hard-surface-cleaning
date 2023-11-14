@@ -42,6 +42,7 @@ export const IndexServices = () => {
                   className={`${styles.bg}`}
                   width="100%"
                   height="100%"
+                  alt="Image of washed hard floor. Example of hard surface cleaning."
                 />
               </div>
             </div>

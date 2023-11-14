@@ -31,6 +31,7 @@ export const IndexContact = () => {
         width="100%"
         height="100%"
         className={`${styles.bg}`}
+        alt="Image of Radiance Glow Hard Surface cleaning trailer advertisment."
       />
 
       <div className={`${styles.overlay}`}>

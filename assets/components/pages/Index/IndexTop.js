@@ -31,6 +31,7 @@ export const IndexTop = () => {
         width="100%"
         height="100%"
         className={`${styles.bg}`}
+        alt="Image of pressure washing hard surface. Example of pressure washing."
       />
 
       <div className={`${styles.overlay}`}>
