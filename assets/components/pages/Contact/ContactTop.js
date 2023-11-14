@@ -34,6 +34,7 @@ export const ContactTop = () => {
         width="100%"
         height="100%"
         className={`${styles.bg}`}
+        alt="Image of vaccuumed carpet. Example of carpet cleaning."
       />
 
       <div className={`${styles.overlay}`}>

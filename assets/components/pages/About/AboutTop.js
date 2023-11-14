@@ -31,6 +31,7 @@ export const AboutTop = () => {
         width="100%"
         height="100%"
         className={`${styles.bg}`}
+        alt="Image of washed hard floor. Example of hard surface cleaning."
       />
 
       <div className={`${styles.overlay}`}>

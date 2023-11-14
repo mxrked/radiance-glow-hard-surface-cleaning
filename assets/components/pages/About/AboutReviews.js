@@ -66,6 +66,7 @@ export const AboutReviews = () => {
                               height="100%"
                               src={review.getReviewPfp}
                               className={`${styles.bg}`}
+                              alt={`Image of ${review.getReviewName}`}
                             />
                           </div>
                         </div>
