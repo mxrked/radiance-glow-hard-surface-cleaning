@@ -22,11 +22,11 @@ export const PageHead = () => {
 
   //! Descriptions
   const INDEX_DESC =
-    "Radiance Glow provides top-notch hard surface cleaning services in North Carolina. Chip Holden and our team offer NC pressure washing, tile and grout, carpet, and upholstery cleaning. Experience the radiance and glow of your surfaces. Contact us today!";
+    "Radiance Glow: Your top choice for hard surface cleaning in High Point, NC. From NC pressure washing to carpet and upholstery cleaning, experience the brilliance. Serving Greensboro, Winston Salem, High Point, and beyond. Contact us for a radiantly clean home or office!";
   const ABOUT_DESC =
-    "Experience the radiance and glow of Radiance Glow HSC. Discover Chip Holden and our exceptional NC cleaning services, including pressure washing, tile and grout, carpet cleaning, and upholstery cleaning.";
+    "Radiance Glow: Experience the radiance and glow of Radiance Glow HSC. Discover Chip Holden and our exceptional NC cleaning services, including pressure washing, tile and grout, carpet cleaning, and upholstery cleaning.";
   const CONTACT_DESC =
-    "Contact Radiance Glow HSC for professional hard surface cleaning services. Book a service or appointment to experience the radiance and glow we bring to your surfaces. Get in touch with Chip Holden for all your cleaning needs.";
+    "Radiance Glow: Contact Radiance Glow HSC for professional hard surface cleaning services. Book a service or appointment to experience the radiance and glow we bring to your surfaces. Get in touch with Chip Holden for all your cleaning needs.";
   const DESCS = [INDEX_DESC, ABOUT_DESC, CONTACT_DESC];
 
   let desc;
