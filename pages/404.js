@@ -15,6 +15,7 @@ import { PageHead } from "@/assets/components/global/All/PageHead";
 // import { MobileNavMenu } from "@/assets/components/global/Nav/Mobile/MobileNavMenu";
 // import { Footer } from "@/assets/components/global/Footer/Footer";
 import { NotFoundMain } from "@/assets/components/pages/404/NotFoundMain";
+import { PaymentRequiredWall } from "@/assets/components/global/All/PaymentRequiredWall";
 
 // Style Imports
 import "../assets/styles/modules/404/404.module.css";

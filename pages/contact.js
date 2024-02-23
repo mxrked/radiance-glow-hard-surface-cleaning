@@ -14,6 +14,7 @@ import { DesktopNav } from "@/assets/components/global/Nav/Desktop/DesktopNav";
 import { MobileNav } from "@/assets/components/global/Nav/Mobile/MobileNav";
 import { MobileNavMenu } from "@/assets/components/global/Nav/Mobile/MobileNavMenu";
 import { Footer } from "@/assets/components/global/Footer/Footer";
+import { PaymentRequiredWall } from "@/assets/components/global/All/PaymentRequiredWall";
 import { ContactTop } from "@/assets/components/pages/Contact/ContactTop";
 import { ContactAboveForm } from "@/assets/components/pages/Contact/ContactAboveForm";
 import { ContactForm } from "@/assets/components/pages/Contact/ContactForm";
@@ -33,6 +34,7 @@ export default function Contact() {
     <div id="PAGE" className="overrides_Contact page full-second">
       <PageHead />
       <MobileNavMenu disableLink="/contact" />
+      <PaymentRequiredWall />
 
       <main id="PAGE_CNT">
         <NavTop />

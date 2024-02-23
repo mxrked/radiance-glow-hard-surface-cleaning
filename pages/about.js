@@ -14,6 +14,7 @@ import { DesktopNav } from "@/assets/components/global/Nav/Desktop/DesktopNav";
 import { MobileNav } from "@/assets/components/global/Nav/Mobile/MobileNav";
 import { MobileNavMenu } from "@/assets/components/global/Nav/Mobile/MobileNavMenu";
 import { Footer } from "@/assets/components/global/Footer/Footer";
+import { PaymentRequiredWall } from "@/assets/components/global/All/PaymentRequiredWall";
 import { AboutTop } from "@/assets/components/pages/About/AboutTop";
 import { AboutVideo } from "@/assets/components/pages/About/AboutVideo";
 import { AboutText } from "@/assets/components/pages/About/AboutText";
@@ -35,6 +36,7 @@ export default function About() {
     <div id="PAGE" className="overrides_About page full-second">
       <PageHead />
       <MobileNavMenu disableLink="/about" />
+      <PaymentRequiredWall />
 
       <main id="PAGE_CNT">
         <NavTop />

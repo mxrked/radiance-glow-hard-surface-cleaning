@@ -19,6 +19,7 @@ import { IndexServices } from "@/assets/components/pages/Index/IndexServices";
 import { IndexAbout } from "@/assets/components/pages/Index/IndexAbout";
 import { IndexContact } from "@/assets/components/pages/Index/IndexContact";
 import { Footer } from "@/assets/components/global/Footer/Footer";
+import { PaymentRequiredWall } from "@/assets/components/global/All/PaymentRequiredWall";
 
 // Style Imports
 import "../assets/styles/modules/Index/Index.module.css";
@@ -103,6 +104,7 @@ export default function Home({ TOTAL_NUMBER_OF_IPS, current_ip }) {
     <div id="PAGE" className="overrides_Index page full-second">
       <PageHead />
       <MobileNavMenu disableLink="/" />
+      <PaymentRequiredWall />
 
       <main id="PAGE_CNT">
         {/**
