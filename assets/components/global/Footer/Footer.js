@@ -225,13 +225,13 @@ export const Footer = (props) => {
       <div className={`${styles.footer_bottom}`}>
         <span>
           Website created by{" "}
-          <span
-            onClick={() => {
-              window.open("https://www.codingthefront.com/", "_blank");
-            }}
+          <a
+            href="https://dynamicwebtechnologies.com/"
+            target={"_blank"}
+            className="orientation-change-element half-second"
           >
-            codingthefront.com
-          </span>
+            Dynamic Web Technologies
+          </a>
         </span>
       </div>
     </footer>
