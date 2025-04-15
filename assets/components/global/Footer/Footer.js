@@ -213,7 +213,9 @@ export const Footer = (props) => {
 
                   <ul className={`${styles.contact}`}>
                     <li>info@radianceglowhsc.com</li>
-                    <li>+1 (336) 259-1354</li>
+                    <li>
+                      <a href="tel:+13362591354">+1 (336) 259-1354</a>
+                    </li>
                   </ul>
                 </div>
               </div>

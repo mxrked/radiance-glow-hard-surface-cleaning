@@ -128,6 +128,10 @@
 .footer .footer_main .footer_main_inner .footer_main_inner_box .footer_main_inner_row .footer_R .footer_main_inner_side_cnt .contact li {
   margin-bottom: 11px;
 }
+.footer .footer_main .footer_main_inner .footer_main_inner_box .footer_main_inner_row .footer_R .footer_main_inner_side_cnt .contact li a {
+  color: white;
+  text-decoration: none;
+}
 .footer .footer_bottom {
   height: 70px;
   background-color: rgb(20, 20, 20);

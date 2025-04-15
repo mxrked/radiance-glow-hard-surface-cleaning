@@ -73,6 +73,10 @@
   color: #004481;
   cursor: default;
 }
+.nav_top .nav_top_inner .nav_top_inner_box .nav_top_inner_row .nav_top_R .nav_top_inner_side_cnt ul li a {
+  color: #004481;
+  text-decoration: none;
+}
 
 .desktop_nav {
   background-color: #fbfffc;

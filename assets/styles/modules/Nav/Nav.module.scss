@@ -84,6 +84,13 @@
               font-size: clamp(14px, 16px, 16px);
               color: $CongressBlue;
               cursor: default;
+
+              li {
+                a {
+                  color: $CongressBlue;
+                  text-decoration: none;
+                }
+              }
             }
           }
         }
