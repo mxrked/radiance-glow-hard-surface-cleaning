@@ -19,6 +19,15 @@ import { LOGO } from "@/assets/cdns/CDNIcons";
 import styles from "../../../styles/modules/Footer/Footer.module.css";
 
 export const Footer = (props) => {
+  const callNumber = () => {
+    const link = document.createElement("a");
+    link.href = "tel:+13362591354";
+    link.style.display = "none";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   // Apply current year
   useEffect(() => {
     document.getElementById("year").innerHTML = new Date().getFullYear();
@@ -214,7 +223,7 @@ export const Footer = (props) => {
                   <ul className={`${styles.contact}`}>
                     <li>info@radianceglowhsc.com</li>
                     <li>
-                      <a href="tel:+13362591354">+1 (336) 259-1354</a>
+                      <span onClick={callNumber}>+1 (336) 259-1354</span>
                     </li>
                   </ul>
                 </div>

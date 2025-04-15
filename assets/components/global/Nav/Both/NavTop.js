@@ -10,6 +10,15 @@ import { SiNextdoor } from "react-icons/si";
 import styles from "../../../../styles/modules/Nav/Nav.module.css";
 
 export const NavTop = () => {
+  const callNumber = () => {
+    const link = document.createElement("a");
+    link.href = "tel:+13362591354";
+    link.style.display = "none";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div
       id="navTop"
@@ -102,7 +111,7 @@ export const NavTop = () => {
                 <ul>
                   <li>info@radianceglowhsc.com</li>
                   <li>
-                    <a href="tel:+13362591354">+1 (336) 259-1354</a>
+                    <span onClick={callNumber}>+1 (336) 259-1354</span>
                   </li>
                 </ul>
               </div>
